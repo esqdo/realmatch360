@@ -1,0 +1,199 @@
+<?php
+add_action( 'after_setup_theme', 'blankslate_setup' );
+function blankslate_setup()
+{
+load_theme_textdomain( 'realmatch', get_template_directory() . '/languages' );
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'post-thumbnails' );
+global $content_width;
+if ( ! isset( $content_width ) ) $content_width = 640;
+register_nav_menus(
+array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
+);
+}
+
+/**
+ * Enqueue scripts and styles.
+ */
+function _s_scripts() {
+    
+        wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery',get_template_directory_uri() . '/js/all.js' , false, null );
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script('responsiveslides',get_template_directory_uri() . '/js/responsiveslides.min.js',array( 'jquery' ));
+    wp_enqueue_script('frogaloops',get_template_directory_uri() . '/js/frogaloops.js',array( 'jquery' ));
+    wp_enqueue_script( 'maphilight', get_template_directory_uri() . '/js/jquery.maphilight.min.js', array('jquery') );
+    wp_enqueue_script('slides',get_template_directory_uri() . '/js/slider.js',array( 'jquery' ));
+    wp_enqueue_script( 'featerlightscript', get_template_directory_uri() . '/js/featherlight.min.js', array('jquery') );
+    wp_enqueue_script( 'corejs', get_template_directory_uri() . '/js/core.min.js', array('jquery') );
+     
+    wp_enqueue_script( 'map', get_template_directory_uri() . '/js/mapandmore.js', array('jquery') );
+    
+    
+	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
+    //wp_enqueue_style( 'bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css' );
+    //wp_enqueue_style( 'all', get_template_directory_uri() . '/css/allcss' );
+    wp_enqueue_style( 'coremincss', get_template_directory_uri() . '/css/core.min.css' );
+    wp_enqueue_style( 'featherlight', get_template_directory_uri() . '/css/featherlight.min.css' );
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
+    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' ); 
+    wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/css/grid.css' );
+    wp_enqueue_style( 'simplelineicons', get_template_directory_uri() . '/css/simple-line-icons.css' );
+    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+    
+
+   
+    
+	//wp_enqueue_script( 'responsiveslides', get_template_directory_uri() . '/js/responsiveslides.min.js', array('jquery'), '20120206', true );
+  //wp_enqueue_script( 'pushy', get_template_directory_uri() . '/js/pushy.min.js', array(), '20140207', true );
+    //wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '20140208', true );
+    //wp_enqueue_script( 'customjs', get_template_directory_uri() . '/js/custom.js', array(),'20140306', true );
+	//wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+}
+add_action( 'wp_enqueue_scripts', '_s_scripts' );
+
+
+add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
+function blankslate_enqueue_comment_reply_script()
+{
+if ( get_option( 'thread_comments' ) ) { wp_enqueue_script( 'comment-reply' ); }
+}
+add_filter( 'the_title', 'blankslate_title' );
+function blankslate_title( $title ) {
+if ( $title == '' ) {
+return '&rarr;';
+} else {
+return $title;
+}
+}
+add_filter( 'wp_title', 'blankslate_filter_wp_title' );
+function blankslate_filter_wp_title( $title )
+{
+return $title . esc_attr( get_bloginfo( 'name' ) );
+}
+add_action( 'widgets_init', 'blankslate_widgets_init' );
+function blankslate_widgets_init()
+{
+register_sidebar( array (
+'name' => __( 'Sidebar Widget Area', 'blankslate' ),
+'id' => 'primary-widget-area',
+'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+'after_widget' => "</li>",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+}
+function blankslate_custom_pings( $comment )
+{
+$GLOBALS['comment'] = $comment;
+?>
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
+<?php 
+}
+add_filter( 'get_comments_number', 'blankslate_comments_number' );
+function blankslate_comments_number( $count )
+{
+if ( !is_admin() ) {
+global $id;
+$comments_by_type = &separate_comments( get_comments( 'status=approve&post_id=' . $id ) );
+return count( $comments_by_type['comment'] );
+} else {
+return $count;
+}
+}
+register_nav_menus( array(
+	'footer_menu' => 'Footer Navigation',
+    'featured-menu' => 'Featured Navigation'
+) );
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	
+       register_post_type( 'featured',
+		array(
+			'labels' => array(
+				'name' => __( 'Featured' ),
+				'singular_name' => __( 'Featured' )
+			),
+		'public' => true,
+		'has_archive' => true,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		)
+	);
+    
+    register_post_type( 'verwaltung',
+		array(
+			'labels' => array(
+				'name' => __( 'Verwaltung' ),
+				'singular_name' => __( 'Verwaltung' )
+			),
+		'public' => true,
+		'has_archive' => false,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		)
+	);
+    
+    
+    
+    register_post_type( 'advisory',
+		array(
+			'labels' => array(
+				'name' => __( 'Advisors' ),
+				'singular_name' => __( 'Advisor' )
+			),
+		'public' => true,
+		'has_archive' => false,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		)
+	);
+    
+    
+    
+	register_post_type( 'mitarbeiter',
+		array(
+			'labels' => array(
+				'name' => __( 'Mitarbeiter' ),
+				'singular_name' => __( 'Mitarbeiter' )
+			),
+		'public' => true,
+		'has_archive' => false,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		)
+	);
+    
+    	register_post_type( 'sales',
+		array(
+			'labels' => array(
+				'name' => __( 'Sales' ),
+				'singular_name' => __( 'Sale' )
+			),
+		'public' => true,
+		'has_archive' => false,
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		)
+	);
+    
+}
+
+// Post Thumbnails
+
+if(function_exists('add_theme_support')) {
+    /** Exists! So add the post-thumbnail */
+    add_theme_support('post-thumbnails');
+ 
+    /** Now Set some image sizes */
+ 
+    /** #1 for our featured content slider */
+    add_image_size( $name = 'featured_img',1028,400,true );
+    add_image_size( $name = 'employee', $width = 223, $height = 160, $crop = true );
+ 
+    /** #2 for post thumbnail */
+   // add_image_size( 'itg_post', 250, 250, true );
+ 
+    /** #3 for widget thumbnail */
+    //add_image_size( 'itg_widget', 40, 40, true );
+ 
+}
+
+
+
