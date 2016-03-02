@@ -2,7 +2,7 @@
 add_action( 'after_setup_theme', 'blankslate_setup' );
 function blankslate_setup()
 {
-load_theme_textdomain( 'realmatch', get_template_directory() . '/languages' );
+load_theme_textdomain( 'realmatch360', get_template_directory() . '/languages' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 global $content_width;
@@ -21,7 +21,7 @@ add_filter('allow_major_auto_core_updates', '__return_true' );
  */
 function _s_scripts() {
 
-        wp_deregister_script( 'jquery' );
+    wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery',get_template_directory_uri() . '/js/all.js' , false, null );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script('responsiveslides',get_template_directory_uri() . '/js/responsiveslides.min.js',array( 'jquery' ));
