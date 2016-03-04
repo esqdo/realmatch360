@@ -1,15 +1,9 @@
 <?php
-add_action( 'after_setup_theme', 'blankslate_setup' );
-function blankslate_setup()
-{
-load_theme_textdomain( 'realmatch360', get_template_directory() . '/languages' );
-add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'post-thumbnails' );
-global $content_width;
-if ( ! isset( $content_width ) ) $content_width = 640;
-register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
-);
+add_action( 'after_setup_theme', 'realmatch360_setup' );
+function realmatch360_setup() {
+  load_theme_textdomain( 'realmatch360', get_template_directory() . '/languages' );
+  add_theme_support( 'automatic-feed-links' );
+  add_theme_support( 'post-thumbnails' );
 }
 
 /* Automatic Updates */
@@ -33,8 +27,7 @@ function _s_scripts() {
 
     wp_enqueue_script( 'map', get_template_directory_uri() . '/js/mapandmore.js', array('jquery') );
 
-
-	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
+	   wp_enqueue_style( '_s-style', get_stylesheet_uri() );
     //wp_enqueue_style( 'bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css' );
     //wp_enqueue_style( 'all', get_template_directory_uri() . '/css/allcss' );
     wp_enqueue_style( 'coremincss', get_template_directory_uri() . '/css/core.min.css' );
@@ -44,10 +37,6 @@ function _s_scripts() {
     wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/css/grid.css' );
     wp_enqueue_style( 'simplelineicons', get_template_directory_uri() . '/css/simple-line-icons.css' );
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
-
-
-
-
 	//wp_enqueue_script( 'responsiveslides', get_template_directory_uri() . '/js/responsiveslides.min.js', array('jquery'), '20120206', true );
   //wp_enqueue_script( 'pushy', get_template_directory_uri() . '/js/pushy.min.js', array(), '20140207', true );
     //wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '20140208', true );
@@ -80,7 +69,7 @@ add_action( 'widgets_init', 'blankslate_widgets_init' );
 function blankslate_widgets_init()
 {
 register_sidebar( array (
-'name' => __( 'Sidebar Widget Area', 'blankslate' ),
+'name' => __( 'Sidebar Widget Area', 'realmatch360' ),
 'id' => 'primary-widget-area',
 'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 'after_widget' => "</li>",
@@ -98,7 +87,7 @@ Blog Widgets
 function blog_widgets_init() {
 
 	register_sidebar(array(
-		'name' => __( 'Blog Widget Area', 'blankslate' ),
+		'name' => __( 'Blog Widget Area', 'realmatch360' ),
 		'id' => 'blog-widget',
 		'before_widget' => '<div id="blogwidget" class="widget-blog">',
 		'after_widget' => '</div>',
@@ -133,7 +122,10 @@ register_nav_menus( array(
     'featured-menu' => 'Featured Navigation'
 ) );
 
+//Register Custom Post Types
 include 'inc/customposts/customposts.php';
+//Metaboxes for Frontpage
+include 'inc/metaboxes/frontpage.php';
 
 // Post Thumbnails
 
@@ -213,5 +205,3 @@ class Offers_Widget extends WP_Widget {
 		<?php
 	} //end form()
 }
-
-include 'inc/metaboxes/frontpage.php';

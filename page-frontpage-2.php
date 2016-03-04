@@ -1,4 +1,4 @@
-	
+
 <?php
 /*
 
@@ -18,29 +18,29 @@ get_header(); ?>
             // The Loop!
             if ($featured->have_posts()) {
             ?>
-    
+
             <?php
                 while ($featured->have_posts()) {
                 $featured->the_post();
             ?>
-    
+
     <li class="container">
-        
+
         <div class="quote">
             <?php the_field('quote'); ?>
         </div>
-    
+
         <div class="featuredslidenav">
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch'); ?></a>
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch'); ?></a>
-            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch'); ?></a>
-        
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch360'); ?></a>
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch360'); ?></a>
+            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch360'); ?></a>
+
        </div>
-      
-        
-       
-    
-        
+
+
+
+
+
         <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/83177919?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
     <div class="featureddesktop"><?php the_post_thumbnail('featured_img'); ?></div>
      <div class="featuredtablet"><?php $image = get_field('featuredtablet');if( !empty($image) ): ?>
@@ -50,11 +50,11 @@ get_header(); ?>
         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?></div>
     <div class="featuredmobile"><?php $image = get_field('featuredmobile');if( !empty($image) ): ?>
         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?></div>
-        
+
 
     </li>
 
-          
+
         <?php
         }
         ?>
@@ -67,29 +67,29 @@ get_header(); ?>
 </section>
     <div class="container">
        <div id="featurednav">
-           
+
 <?php wp_nav_menu( array( 'theme_location' => 'featured-menu' ) ); ?>
-           
-           
-         
-           
-          
+
+
+
+
+
     </div>
-    
- 
+
+
 
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    
+
     <section class="entry-content container">
-    
-    <section class="contentblockwrp">    
+
+    <section class="contentblockwrp">
     <section class="contentblock container">
             <div class="grid_11 omega description"><?php the_content(); ?></div>
-        
+
 <!-- Imagemap -->
 
 <div class=" grid_8 omega map-container">
@@ -208,15 +208,15 @@ get_header(); ?>
 
 
 <?php wp_reset_postdata(); ?>
-        
+
 <!-- Imagemap End -->
-        
+
             <div id="leftcontent" >
                 <div class="grid_4 omega"><?php the_field('funktionen');?></div>
                 <div class="grid_4 omega"><?php the_field('angebot');?></div>
                 <div class="grid_4 omega"><?php the_field('kostenlos');?></div>
             </div>
-    
+
     </section>
     </section>
     <div class="clear"></div>
@@ -234,11 +234,11 @@ get_header(); ?>
                 <?php wp_reset_postdata(); ?>
             </div>
     </div>
-       
+
        <div class="container">
     <div class="leads">
             <div class="grid_12">
-     
+
 <h2>Neu: Finden Sie die passenden Käufer für Ihr Projekt mit Realmatch360 LEADS</h2>
 <a class="grid_4 leadsimage" target="_blank" href="#"><img src="http://www.realmatch360.com/wp-content/uploads/2014/10/leads-userprofile1.png" alt="Userprofile"></a>
 <div class="grid_7"><h3 class="leadstitle">Ihre Vorteile:</h3>
@@ -254,29 +254,29 @@ get_header(); ?>
 
         <div class="clear"></div>
 
-       
+
 <div class="container">
     <div class="partnerswrp">
         <div class="partners">
             <div class="grid_12">
-            
+
                 <?php the_field('partner');?>
-            
+
             </div>
         </div>
     </div>
 </div>
         <div class="clear"></div>
-      
+
         <div class="clear"></div>
 <div class="container">
-    
+
         <div class="feedblock container">
             <?php $latest = new WP_Query( array( 'posts_per_page' => 1 ));
                 if( $latest->have_posts() ) : ?>
                 <div class=" latest-post">
                     <?php while( $latest->have_posts() ) : $latest->the_post(); ?>
-                    <h3 class="feedtitle">Blog</h3>  
+                    <h3 class="feedtitle">Blog</h3>
                     <h3 class="feedtitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <div class="blogexcerpt"><?php the_excerpt(); ?></div>
                     <div class="clear"></div>
@@ -287,47 +287,47 @@ get_header(); ?>
                     <!-- <h3><?php /* _e('Beliebte Artikel', 'realmatch'); ?></h3>
           <?php the_field('popular'); */?> -->
                     </div>
-         
-           
-                    
-                    
+
+
+
+
        <div class="twitterbadge">
                 <h3 class="feedtitle"><?php _e('Twitter @ImmoDigest', 'realmatch'); ?>
 <div class="twitterbutton"><a href="https://twitter.com/ImmoDigest" class="twitter-follow-button" data-show-count="false" data-lang="de" data-size="large" data-show-screen-name="true">@ImmoDigest folgen</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
-</h3>  
-                
-             
+</h3>
+
+
            <div class="tweetcontent"><a class="twitter-timeline"   data-chrome="nofooter transparent noheader" height="300" href="https://twitter.com/ImmoDigest"  data-widget-id="496927765556256768">Tweets von @ImmoDigest</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
-    
-            
+
+
         </div>
         </div>
-            
+
         <div class="clear"></div>
         <div class="container">
         <div class="advisorywrp">
         <div class="advisory container">
             <?php wp_reset_postdata(); ?>
-            <h2 class="grid_12"><?php _e('Advisory Board', 'realmatch'); ?></h2>   
-            
-                
+            <h2 class="grid_12"><?php _e('Advisory Board', 'realmatch'); ?></h2>
+
+
                 <?php
     $advisors =  new WP_Query( 'post_type=advisory' );
     while ($advisors->have_posts()) {
         $advisors->the_post();
         ?>
     <div class="grid_3 omega employee">
-        
+
         <div class="employeimg"></div><?php the_post_thumbnail(); ?>
     <div class="employeedesc">
         <a class="empoyeehover" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>#advisors"><h3><?php the_title(); ?></h3></a>
        <div class="jobname"><?php the_field('jobname'); ?></div>
-       	
+
 
     </div>
     </div>
@@ -335,19 +335,19 @@ get_header(); ?>
     }
     ?>
     <div class="clear"></div>
-    
-           
+
+
       <!--      <div class="verwaltung">
-     <h2 class="grid_12"><?php _e('Verwaltungsrat', 'realmatch'); ?></h2>  
+     <h2 class="grid_12"><?php _e('Verwaltungsrat', 'realmatch'); ?></h2>
             <div class="">
-                
+
                 <?php
     $advisors =  new WP_Query( 'post_type=verwaltung' );
     while ($advisors->have_posts()) {
         $advisors->the_post();
         ?>
     <div class="grid_3 omega employee">
-        
+
         <div class="employeimg"></div><?php the_post_thumbnail(); ?>
     <div class="employeedesc">
         <a class="empoyeehover" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><h3><?php the_title(); ?></h3></a>
@@ -357,12 +357,12 @@ get_header(); ?>
     <?php
     }
     ?>
-     </div>           
-        </div>  --> 
-            
+     </div>
+        </div>  -->
+
         </div>
-        
-    </div> 
+
+    </div>
 </div>
 
     <?php endwhile; endif; ?>
