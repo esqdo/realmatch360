@@ -2,9 +2,14 @@
 
 function add_frontpage_boxes()
 {
+  $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+  $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+    // check for a template type
+    if ($template_file == 'page-frontpage.php') {
     add_meta_box("map-text", "Seitentext", "map_text_markup", "page", "normal", "high", null);
     add_meta_box("leads-text", "Leadsblock", "leads_text_markup", "page", "normal", "high", null);
     add_meta_box("partner-text", "Partner", "partner_text_markup", "page", "normal", "high", null);
+  }
 }
 add_action("add_meta_boxes", "add_frontpage_boxes");
 
