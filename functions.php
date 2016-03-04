@@ -13,9 +13,9 @@ array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
 }
 
 /* Automatic Updates */
-
 add_filter( 'auto_update_plugin', '__return_true' );
 add_filter('allow_major_auto_core_updates', '__return_true' );
+
 /**
  * Enqueue scripts and styles.
  */
@@ -132,88 +132,8 @@ register_nav_menus( array(
 	'footer_menu' => 'Footer Navigation',
     'featured-menu' => 'Featured Navigation'
 ) );
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
 
-       register_post_type( 'featured',
-		array(
-			'labels' => array(
-				'name' => __( 'Featured' ),
-				'singular_name' => __( 'Featured' )
-			),
-		'public' => true,
-		'has_archive' => true,
-    'show_in_nav_menus' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','revisions' ),
-		)
-	);
-
-    register_post_type( 'verwaltung',
-		array(
-			'labels' => array(
-				'name' => __( 'Verwaltung' ),
-				'singular_name' => __( 'Verwaltung' )
-			),
-		'public' => true,
-		'has_archive' => false,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','revisions' ),
-		)
-	);
-
-
-
-    register_post_type( 'advisory',
-		array(
-			'labels' => array(
-				'name' => __( 'Advisors' ),
-				'singular_name' => __( 'Advisor' )
-			),
-		'public' => true,
-		'has_archive' => false,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
-		)
-	);
-
-
-
-	register_post_type( 'mitarbeiter',
-		array(
-			'labels' => array(
-				'name' => __( 'Mitarbeiter' ),
-				'singular_name' => __( 'Mitarbeiter' )
-			),
-		'public' => true,
-		'has_archive' => false,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','revisions' ),
-		)
-	);
-
-    	register_post_type( 'sales',
-		array(
-			'labels' => array(
-				'name' => __( 'Sales' ),
-				'singular_name' => __( 'Sale' )
-			),
-		'public' => true,
-		'has_archive' => false,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','revisions' ),
-		)
-	);
-
-
-    register_post_type( 'offers',
-		array(
-			'labels' => array(
-				'name' => __( 'Offers' ),
-				'singular_name' => __( 'Offer' )
-			),
-		'public' => true,
-		'has_archive' => false,
-        'supports' => array( 'title','editor','revisions' ),
-		)
-	);
-
-}
+include 'inc/customposts/customposts.php';
 
 // Post Thumbnails
 
@@ -226,13 +146,6 @@ if(function_exists('add_theme_support')) {
     /** #1 for our featured content slider */
     add_image_size( $name = 'featured_img',1028,400,true );
     add_image_size( $name = 'employee', $width = 223, $height = 160, $crop = true );
-
-    /** #2 for post thumbnail */
-   // add_image_size( 'itg_post', 250, 250, true );
-
-    /** #3 for widget thumbnail */
-    //add_image_size( 'itg_widget', 40, 40, true );
-
     add_image_size('mobilereduced', 490);
 
 }
