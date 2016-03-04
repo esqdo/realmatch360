@@ -9,7 +9,7 @@
 <link href="<?php bloginfo('template_url'); ?>/img/favicon.png" rel="apple-touch-icon-precomposed">
 <meta content="<?php bloginfo('template_url'); ?>/img/favicon.png" name="msapplication-TileImage">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
- 
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -18,7 +18,7 @@
 <div id="site-title" class="grid_3 omega"><h1><a href="<?php echo get_home_url(); ?>" alt="Relmatch360">
     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img"></a>
     </h1></div>
-    
+
 <!-- Header Nav Login/Register -->
 <div id="pageNavigationTop">
     <?php do_action('icl_language_selector'); ?>
@@ -80,7 +80,7 @@
 
 
 </div>
-    
+
 </section>
     <div class="clear"></div>
 <section id="site-description" class="grid_12"><h1> <?php echo get_bloginfo ( 'description' );  ?></h1></section><div class="clear"></div>

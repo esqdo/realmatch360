@@ -143,6 +143,7 @@ function create_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
+    'show_in_nav_menus' => true,
         'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','revisions' ),
 		)
 	);
@@ -239,19 +240,17 @@ if(function_exists('add_theme_support')) {
 
 // Custom Post Type Widget
 
-
-
-
 add_action( 'widgets_init', 'register_offers_widget' );
 function register_offers_widget() {
 	register_widget( 'Offers_Widget' );
 }
+
 class Offers_Widget extends WP_Widget {
 
 	function __construct() {
 		$widget_ops = array( 'classname' => 'offer-widget', 'description' => __( 'Choose and display a single offer' ) );
 		$control_ops = array(  );
-		parent::WP_Widget( 'offerswidget', __( 'Offers' ), $widget_ops, $control_ops );
+		parent::__construct( 'offerswidget', __( 'Offers' ), $widget_ops, $control_ops );
 	}
 
 	function widget( $args, $instance ) {
@@ -301,3 +300,5 @@ class Offers_Widget extends WP_Widget {
 		<?php
 	} //end form()
 }
+
+include 'inc/metaboxes/frontpage.php';
