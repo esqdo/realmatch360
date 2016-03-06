@@ -2110,17 +2110,8 @@ img.fb {
         height:250px;
     }
 
-    .featureddesktop {
-        display: none;
-    }
-
     #searchform input {
         width:160px;
-    }
-
-    .featuredtablet {
-        display: block;
-
     }
 
     .employeeregion {
@@ -2349,30 +2340,9 @@ img.fb {
         padding:5% 0;
     }
 
-   .featureddesktop {
-        display: none;
-    }
-
-    .featuredtablet {
-        display: none;
-
-    }
-
   .rslides_nav {
       margin-top:-200px;
   }
-
-    .featuredsmall {
-    display: block;
-    }
-
-    .featuredmobile {
-    display: none;
-    }
-
-
-
-
 
     .quote {
         width:160px;
@@ -2606,24 +2576,6 @@ img.fb {
   #featurednav a {
         height:25px;
         line-height: 25px;
-    }
-
-
-    .featureddesktop {
-        display: none;
-    }
-
-    .featuredtablet {
-        display: none;
-
-    }
-
-    .featuredsmall {
-    display: none;
-    }
-
-    .featuredmobile {
-    display: block;
     }
 
        #fl3 {

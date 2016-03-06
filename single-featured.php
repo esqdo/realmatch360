@@ -9,16 +9,16 @@
 
 <div class="featuredpoints grid_6 omega">
     <header class="header">
-        <h2 class="grid_5 omega featuredtitle"><?php _e('For ', 'realmatch360'); ?><?php the_title(); ?></h2>
+        <h2 class="grid_5 omega featuredtitle"><?php _e('For ', 'realmatch'); ?><?php the_title(); ?></h2>
     </header>
  	<div class="clear"></div>
-      <?php the_field('frage'); ?>
-
+  <div class="points">
+      <?php the_content(); ?>
+  </div>
 
  <div class="featuredsinglenav">
-                <a class="button" href="<?php echo get_permalink(icl_object_id(8490,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Productdetails', 'realmatch360'); ?></a>
-                <a class="button" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch360'); ?></a>
-                <!-- <a class="button" href="http://www.realmatch360.com/report-city.html"><?php _e('Beispiel anschauen', 'realmatch360'); ?></a> -->
+                <a class="button" href="<?php echo get_permalink(icl_object_id(8490,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Productdetails', 'realmatch'); ?></a>
+                <a class="button" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch'); ?></a>
         </div>
 
 </div>
@@ -42,7 +42,7 @@ if( !empty($image) ): ?>
 </section>
 <section class="page-content">
 
-<?php the_content(); ?>
+
 <section class="usewrp container">
 <h2 class="grid_12"><?php the_field('nutzentitel'); ?></h2>
 <div class="grid_4 omega questionwrapper">
@@ -75,7 +75,9 @@ if( !empty($image) ): ?>
                 while ($offer->have_posts()) {
                         $offer->the_post();
                         ?>
-                    <?php the_content(); ?>
+                    <div class="offer">
+                        <?php the_content(); ?>
+                      </div>
                 <?php
             }
             ?>

@@ -124,10 +124,7 @@ register_nav_menus( array(
 
 //Register Custom Post Types
 include 'inc/customposts/customposts.php';
-//Metaboxes for Frontpage
-include 'inc/metaboxes/frontpage.php';
-//Metaboxes for Featured Custo Post Type
-include 'inc/metaboxes/featured.php';
+
 
 // Post Thumbnails
 

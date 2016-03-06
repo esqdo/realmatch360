@@ -26,20 +26,20 @@ get_header(); ?>
     <li class="container">
 
         <div class="quote">
-
+            <?php the_field('quote'); ?>
         </div>
 
         <div class="featuredslidenav">
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch360'); ?></a>
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch360'); ?></a>
-            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch360'); ?></a>
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch'); ?></a>
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch'); ?></a>
+            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch'); ?></a>
 
        </div>
 
 
 
 
-        <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/<?php _e('118894194', 'realmatch360'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
+        <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/<?php _e('118894194', 'realmatch'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
     <div class="featureddesktop"><?php the_post_thumbnail('featured_img'); ?></div>
     </li>
 
@@ -201,9 +201,9 @@ get_header(); ?>
 <!-- Imagemap End -->
 
             <div id="leftcontent" >
-              <div class="grid_4 omega"><?php echo get_post_meta($post->ID, "feature-text", true); ?></div>
-              <div class="grid_4 omega"><?php echo get_post_meta($post->ID, "services-text", true); ?></div>
-              <div class="grid_4 omega"><?php echo get_post_meta($post->ID, "try-text", true); ?></div>
+                <div class="grid_4 omega"><?php the_field('funktionen');?></div>
+                <div class="grid_4 omega"><?php the_field('angebot');?></div>
+                <div class="grid_4 omega"><?php the_field('kostenlos');?></div>
             </div>
 
     </section>
@@ -211,34 +211,30 @@ get_header(); ?>
     <div class="clear"></div>
     <div class="offerwrp">
             <div class="container">
+
                                          <?php
                 $offer =  new WP_Query( 'post_type=offers' );
                 while ($offer->have_posts()) {
                         $offer->the_post();
                         ?>
-                    <div class="offer">
-                      <h3><?php the_title(); ?></h3>
-                    <?php the_content(); ?>
-                  </div>
+                        <div class="offer">
+                          <?php the_content(); ?>
+                        </div>
                 <?php
             }
             ?>
+
                 <?php wp_reset_postdata(); ?>
             </div>
     </div>
 
 <div class="container">
     <div id="profiles">
-      <a href="<?php echo get_permalink(icl_object_id(1854,'page',false,ICL_LANGUAGE_CODE));?>"><div class="kaeuferprofile"><img src="<?php echo get_post_meta($post->ID, "leads-profile", true); ?>"></div></a>
+      <a href="<?php echo get_permalink(icl_object_id(1854,'page',false,ICL_LANGUAGE_CODE));?>"><div class="kaeuferprofile"><img src="<?php the_field('leadsimage'); ?>"></div></a>
     	<div class="grid_12">
-          <h2><?php echo get_post_meta($post->ID, "leads-title", true); ?></h2>
-          <a class="grid_4 leadsimage" href="<?php echo get_post_meta($post->ID, "leads-link", true); ?>">
-            <img src="<?php echo get_post_meta($post->ID, "leads-image", true); ?>" alt="Userprofile">
-          </a>
-          <div class="grid_7 leadstext">
-              <?php echo get_post_meta($post->ID, "leads-text", true); ?>
-            <a href="<?php echo get_post_meta($post->ID, "leads-link", true); ?>" class="leadsbutton">Find out more</a>
-          </div>
+
+            <?php the_field('leadsblock');?>
+
         </div>
     </div>
 </div>
@@ -261,13 +257,15 @@ get_header(); ?>
                         <?php endwhile; ?>
                     <a class="" href="<?php echo get_permalink(icl_object_id(65,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('More Articles', 'realmatch'); ?></a>
                                     <?php endif; wp_reset_postdata(); ?>
+                    <!-- <h3><?php /* _e('Beliebte Artikel', 'realmatch'); ?></h3>
+          <?php the_field('popular'); */?> -->
                     </div>
 
 
 
 
        <div class="twitterbadge">
-                <h3 class="feedtitle"><?php _e('Twitter @ImmoDigest', 'realmatch360'); ?>
+                <h3 class="feedtitle"><?php _e('Twitter @ImmoDigest', 'realmatch'); ?>
 <div class="twitterbutton"><a href="https://twitter.com/ImmoDigest" class="twitter-follow-button" data-show-count="false" data-lang="de" data-size="large" data-show-screen-name="true">@ImmoDigest folgen</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
@@ -291,18 +289,15 @@ get_header(); ?>
     <div class="partnerswrp">
         <div class="partners">
             <div class="grid_12">
-              <h2><?php echo get_post_meta($post->ID, "partner-title", true); ?></h2>
-              <ul class="partnerslider">
-                <?php echo get_post_meta($post->ID, "partner-text", true); ?>
-              </ul>
 
+                <?php the_field('partner');?>
 
             </div>
         </div>
     </div>
 </div>
 
-
+    <div class="clear"></div>
         </div>
 
     </div>
