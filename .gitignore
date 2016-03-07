@@ -1,2 +1,4 @@
 .DS_Store
-
+.idea/
+assets/**/*.css
+assets/**/*.map

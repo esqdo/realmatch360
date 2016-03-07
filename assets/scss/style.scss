@@ -1,0 +1,27 @@
+
+/* Immport Fonts */
+@import 'partials/fonts';
+
+/* Icons */
+
+
+
+/* Colors */
+
+$white: #FFFFFF;
+$black: #000000;
+$greencolor: #26686d;
+$linkcolor: #F29100;
+$hovercolor: #fda04e;
+
+/* Fonts */
+
+$headerfont: 'geogrotesquesemibold';
+
+
+
+/* Basics */
+
+h1, h2, h3, h4 {
+  font-family: $headerfont;
+}
