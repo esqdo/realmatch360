@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Realmatch360\n"
+"POT-Creation-Date: 2016-03-18 10:15+0100\n"
+"PO-Revision-Date: 2016-03-18 10:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:6 search.php:16
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: 404.php:9
+msgid "Back to the homepage?"
+msgstr "Retour à la page d'accueil?"
+
+#: 404.php:9
+msgid "Bring me back"
+msgstr "Ramène-moi"
+
+#: archive.php:5
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Archives journalières: %s"
+
+#: archive.php:6
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Archives mensuelles: %s"
+
+#: archive.php:7
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Archives annuelles: %s"
+
+#: archive.php:8
+msgid "Archives"
+msgstr "Archives"
+
+#: attachment.php:6
+#, php-format
+msgid "Return to %s"
+msgstr "Retourner à %s"
+
+#: author.php:5
+msgid "Author Archives"
+msgstr "Archives d'Auteur"
+
+#: category.php:6
+msgid "Category Archives: "
+msgstr "Catégorie archives:"
+
+#: comments.php:31
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: comments.php:31
+msgid "Trackback"
+msgstr "Trackback"
+
+#: entry-footer.php:5 entry.php:10
+msgid "Comments"
+msgstr "Commentaires"
+
+#: functions.php:67
+msgid "Sidebar Widget Area"
+msgstr "Sidebar Widget Area"
+
+#: functions.php:85
+msgid "Blog Widget Area"
+msgstr "Blog Widget Area"
+
+#: functions.php:178
+msgid "Choose and display a single offer"
+msgstr "Choisissez et afficher une seule offre"
+
+#: functions.php:180 inc/customposts/customposts.php:27
+msgid "Offers"
+msgstr "Offres"
+
+#: functions.php:211
+msgid "Select an Offer:"
+msgstr "Sélectionnez une offre:"
+
+#: functions.php:222
+msgid "No offers were found"
+msgstr "Aucune offre n'a été trouvé"
+
+#: inc/customposts/customposts.php:28
+msgid "Offer"
+msgstr "Offre"
+
+#: inc/header/header.php:17 inc/header/header.php:49
+#: inc/headerforms/loginforms.php:10 inc/headerforms/loginforms.php:42
+msgid "Login"
+msgstr "Login"
+
+#: inc/header/header.php:18 inc/headerforms/loginforms.php:11
+msgid "Contact"
+msgstr "Contact"
+
+#: inc/header/header.php:28 inc/header/header.php:30
+#: inc/headerforms/loginforms.php:21 inc/headerforms/loginforms.php:23
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: inc/header/header.php:36 inc/header/header.php:38
+#: inc/headerforms/loginforms.php:29 inc/headerforms/loginforms.php:31
+msgid "Password"
+msgstr "Mot de passe"
+
+#: inc/header/header.php:43 inc/headerforms/loginforms.php:36
+msgid "Remember Me"
+msgstr "Connexion automatique"
+
+#: inc/header/header.php:49 inc/headerforms/loginforms.php:42
+msgid "Checking..."
+msgstr "Vérification…"
+
+#: inc/header/header.php:56 inc/headerforms/loginforms.php:49
+msgid "Forgot Password?"
+msgstr "Mot de passe oublié?"
+
+#: inc/header/header.php:62 inc/header/header.php:63
+#: inc/headerforms/loginforms.php:55 inc/headerforms/loginforms.php:56
+msgid "Login failed."
+msgstr "Echec d'enregistrement"
+
+#: nav-below.php:3
+#, php-format
+msgid "%s older"
+msgstr "%s nouveau"
+
+#: nav-below.php:4
+#, php-format
+msgid "newer %s"
+msgstr "anciens %s"
+
+#: page-about.php:25
+msgid "Adhoc order form"
+msgstr "Demande de données"
+
+#: page-frontpage-2.php:34 page-frontpage.php:33
+msgid "More Information"
+msgstr "En savoir plus"
+
+#: page-frontpage-2.php:35 page-frontpage.php:34 single-featured.php:21
+msgid "Get an Appointment"
+msgstr "Conseiller à disposition"
+
+#: page-frontpage-2.php:36 page-frontpage.php:35
+msgid "Play Video"
+msgstr "Lire Vidéo"
+
+#: page-frontpage-2.php:283 page-frontpage.php:256
+msgid "Read More"
+msgstr "En savoir plus"
+
+#: page-frontpage-2.php:285 page-frontpage.php:258
+msgid "More Articles"
+msgstr "D’autres articles"
+
+#: page-frontpage-2.php:295 page-frontpage.php:268
+msgid "Twitter @ImmoDigest"
+msgstr "Twitter @ImmoDigest"
+
+#: page-frontpage-2.php:316
+msgid "Advisory Board"
+msgstr "Advisory Board"
+
+#: page-frontpage-2.php:341
+msgid "Verwaltungsrat"
+msgstr ""
+
+#: page-frontpage.php:42
+msgid "118894194"
+msgstr "118894194"
+
+#: search.php:7
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour: %s"
+
+#: search.php:19
+msgid "Sorry, nothing matched your search. Please try again."
+msgstr "Désolé, rien ne correspond à votre recherche. Veuillez réessayer."
+
+#: single-featured.php:12
+msgid "For "
+msgstr "Pour"
+
+#: single-featured.php:20
+msgid "Productdetails"
+msgstr "Produit détaillé "
+
+#: tag.php:4
+msgid "Tag Archives: "
+msgstr "Tag Archives:"
+
+#. Theme Name of the plugin/theme
+msgid "Realmatch360"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://realmatch360.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "New Theme for realmatch360"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Silvan Adrian"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://silvanadrian.ch"
+msgstr ""
