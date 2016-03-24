@@ -1,7 +1,7 @@
 <?php
 add_action( 'after_setup_theme', 'realmatch360_setup' );
 function realmatch360_setup() {
-  load_theme_textdomain( 'realmatch360', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'realmatch', get_template_directory() . '/languages' );
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'post-thumbnails' );
 }
@@ -16,6 +16,7 @@ include_once('inc/customfields/homepage.php');
 include_once('inc/customfields/products.php');
 include_once('inc/customfields/sales.php');
 include_once('inc/customfields/team.php');
+
 /* Automatic Updates */
 add_filter( 'auto_update_plugin', '__return_true' );
 add_filter('allow_major_auto_core_updates', '__return_true' );
