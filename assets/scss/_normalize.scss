@@ -301,6 +301,10 @@ sub {
     *list-style-image: none;
   }
 
+  nav ul li {
+    list-style:none;
+  }
+
 }
 
 /* Embedded content

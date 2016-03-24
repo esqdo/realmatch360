@@ -35,12 +35,11 @@ get_header(); ?>
             <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch'); ?></a>
 
        </div>
-
-
-
-
         <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/<?php _e('118894194', 'realmatch'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
-    <div class="featureddesktop"><?php the_post_thumbnail('featured_img'); ?></div>
+        <div class="featureddesktop"><?php the_post_thumbnail('featured_desktop'); ?></div>
+         <div class="featuredtablet"><?php the_post_thumbnail('featured_tablet'); ?></div>
+         <div class="featuredsmall"><?php the_post_thumbnail('featured_small'); ?></div>
+        <div class="featuredmobile"><?php the_post_thumbnail('featured_mobile'); ?></div>
     </li>
 
 

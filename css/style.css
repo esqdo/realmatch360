@@ -7,8 +7,89 @@ Description: New Theme for realmatch360
 Version: 1.0
 */
 
-/* Basics */
+/* Webfont: LatoLatinLight-Regular */@font-face {
+    font-family: 'LatoLatinLight';
+    src: url('../fonts/lato-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato-light-webfont.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato-light-webfont.ttf') format('truetype'),
+        url('../fonts/latolatinlight-regular-webfont.svg#lato_latin_lightregular') format('svg');
+    font-style: normal;
+    font-weight: normal;
 
+}
+
+/* Webfont: LatoLatin-Bold */@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/latolatin-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/latolatin-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/latolatin-bold-webfont.svg#lato_latinbold') format('svg'),
+         url('../fonts/LatoLatin-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatin-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+    /* text-rendering: optimizeLegibility; */
+}
+
+
+
+/* Webfont: LatoLatin-Regular */@font-face {
+    font-family: 'LatoLatin';
+    src: url('../fonts/latolatin-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/latolatin-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/latolatin-regular-webfont.svg#lato_latinregular') format('svg'),
+         url('../fonts/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLatin-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    /* text-rendering: optimizeLegibility; */
+}
+
+@font-face {
+    font-family: 'geogrotesquesemibold';
+    src: url('../fonts/geogtq-sb-webfont.eot');
+    src: url('../fonts/geogtq-sb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geogtq-sb-webfont.woff') format('woff'),
+         url('../fonts/geogtq-sb-webfont.ttf') format('truetype'),
+         url('../fonts/geogtq-sb-webfont.svg#geogrotesque_smbdsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'dosisbold';
+    src: url('../fonts/dosis-bold-webfont.eot');
+    src: url('../fonts/dosis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-bold-webfont.woff') format('woff'),
+         url('../fonts/dosis-bold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-bold-webfont.svg#dosisbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.eot');
+    src: url('../fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff'),
+         url('../fonts/dosis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Basics */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+html {
+    font-family: 'LatoLatinLight', sans-serif;
+    box-sizing: border-box;
+    height:100%;
+}
 
 .inbound-label {
     font-family: 'LatoLatinLight';
@@ -460,7 +541,7 @@ button.register {
 
 .mapimg {
     display: block;
-    background: url(http://www.realmatch360.com/app/static/img/map.png) repeat scroll 0% 0% transparent;
+    background: url(https://www.realmatch360.com/app/static/img/map.png) repeat scroll 0% 0% transparent;
     position: relative;
     padding: 0px; width: 650px; height: 439px;
 }
@@ -2029,8 +2110,17 @@ img.fb {
         height:250px;
     }
 
+    .featureddesktop {
+        display: none;
+    }
+
     #searchform input {
         width:160px;
+    }
+
+    .featuredtablet {
+        display: block;
+
     }
 
     .employeeregion {
@@ -2081,7 +2171,7 @@ img.fb {
 
     .mapimg {
         display: block;
-        background: url(http://www.realmatch360.com/app/static/img/map.png) repeat scroll 0% 0% transparent;
+        background: url(https://www.realmatch360.com/app/static/img/map.png) repeat scroll 0% 0% transparent;
         position: relative;
         padding: 0px; width: 650px; height: 439px;
         margin-left:39px;
@@ -2259,9 +2349,30 @@ img.fb {
         padding:5% 0;
     }
 
+   .featureddesktop {
+        display: none;
+    }
+
+    .featuredtablet {
+        display: none;
+
+    }
+
   .rslides_nav {
       margin-top:-200px;
   }
+
+    .featuredsmall {
+    display: block;
+    }
+
+    .featuredmobile {
+    display: none;
+    }
+
+
+
+
 
     .quote {
         width:160px;
@@ -2495,6 +2606,24 @@ img.fb {
   #featurednav a {
         height:25px;
         line-height: 25px;
+    }
+
+
+    .featureddesktop {
+        display: none;
+    }
+
+    .featuredtablet {
+        display: none;
+
+    }
+
+    .featuredsmall {
+    display: none;
+    }
+
+    .featuredmobile {
+    display: block;
     }
 
        #fl3 {

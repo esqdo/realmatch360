@@ -6,6 +6,16 @@ function realmatch360_setup() {
   add_theme_support( 'post-thumbnails' );
 }
 
+/* Advanced Custom Fields */
+define( 'ACF_LITE', true );
+include_once('inc/advanced-custom-fields/acf.php');
+/* Include Custom Fields */
+include_once('inc/customfields/employee.php');
+include_once('inc/customfields/featured.php');
+include_once('inc/customfields/homepage.php');
+include_once('inc/customfields/products.php');
+include_once('inc/customfields/sales.php');
+include_once('inc/customfields/team.php');
 /* Automatic Updates */
 add_filter( 'auto_update_plugin', '__return_true' );
 add_filter('allow_major_auto_core_updates', '__return_true' );
@@ -33,7 +43,6 @@ function _s_scripts() {
     wp_enqueue_style( 'coremincss', get_template_directory_uri() . '/css/core.min.css' );
     wp_enqueue_style( 'featherlight', get_template_directory_uri() . '/css/featherlight.min.css' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
-    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
     wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/css/grid.css' );
     //wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '20140208', true );
     //wp_enqueue_script( 'customjs', get_template_directory_uri() . '/js/custom.js', array(),'20140306', true );
@@ -121,7 +130,6 @@ register_nav_menus( array(
 //Register Custom Post Types
 include 'inc/customposts/customposts.php';
 
-
 // Post Thumbnails
 
 if(function_exists('add_theme_support')) {
@@ -131,10 +139,12 @@ if(function_exists('add_theme_support')) {
     /** Now Set some image sizes */
 
     /** #1 for our featured content slider */
-    add_image_size( $name = 'featured_img',1028,400,true );
-    add_image_size( $name = 'employee', $width = 223, $height = 160, $crop = true );
-    add_image_size('mobilereduced', 490);
+    add_image_size( 'employee', 223, 160, true );
 
+    add_image_size( 'featured_desktop',1028,400,true );
+    add_image_size('featured_tablet', 768,400, true);
+    add_image_size('featured_small', 456,400, true);
+    add_image_size('featured_mobile', 300,400, true);
 }
 
 
