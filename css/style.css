@@ -111,7 +111,7 @@ body {
     font-smoothing:antialiased;
     font-smooth:always;
     word-wrap:break-word;
-         background: url(../img/bg.jpg);
+    background: url(../assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;

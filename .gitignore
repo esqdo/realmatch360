@@ -3,3 +3,5 @@
 assets/**/*.css
 assets/**/*.map
 *.map
+
+node_modules/
