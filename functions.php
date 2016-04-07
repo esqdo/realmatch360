@@ -17,10 +17,6 @@ include_once('inc/customfields/products.php');
 include_once('inc/customfields/sales.php');
 include_once('inc/customfields/team.php');
 
-/* Automatic Updates */
-add_filter( 'auto_update_plugin', '__return_true' );
-add_filter('allow_major_auto_core_updates', '__return_true' );
-
 /**
  * Enqueue scripts and styles.
  */
@@ -38,7 +34,7 @@ function _s_scripts() {
 
     wp_enqueue_script( 'map', get_template_directory_uri() . '/js/mapandmore.js', array('jquery') );
 
-	   wp_enqueue_style( '_s-style', get_stylesheet_uri() );
+	   wp_enqueue_style( 'realmatch360-styles', get_template_directory_uri() . '/style.min.css' );
     //wp_enqueue_style( 'bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css' );
     //wp_enqueue_style( 'all', get_template_directory_uri() . '/css/allcss' );
     wp_enqueue_style( 'coremincss', get_template_directory_uri() . '/css/core.min.css' );

@@ -2,7 +2,7 @@
 <header id="header" role="banner" class="container">
 <section id="branding" class="container">
 <div id="site-title" class="grid_3 omega"><h1><a href="<?php echo get_home_url(); ?>" alt="Relmatch360">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img"></a>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo" class="logo-img"></a>
     </h1></div>
 
 <!-- Header Nav Login/Register -->
