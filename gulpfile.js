@@ -1,24 +1,4 @@
 /**
- * Gulpfile.
- *
- * A simple implementation of Gulp.
- *
- * Implements:
- * 			1. Live reloads browser with BrowserSync.
- * 			2. CSS: Sass to CSS conversion, error catching, Autoprixing, Sourcemaps,
- * 				CSS minification, and Merge Media Queries.
- * 			3. JS: Concatenates & uglifies Vendor and Custom JS files.
- * 			4. Images: Minifies PNG, JPEG, GIF and SVG images.
- * 			5. Watches files for changes in CSS or JS.
- * 			6. Watches files for changes in PHP.
- * 			7. Corrects the line endings.
- *
- *
- * @since 1.0.0
- * @author Ahmad Awais (@mrahmadawais)
- */
-
-/**
  * Configuration.
  *
  * Project Configuration for gulp tasks.
@@ -157,8 +137,8 @@ gulp.task( 'browser-sync', function() {
  		.pipe( sourcemaps.init() )
  		.pipe( sass( {
  			errLogToConsole: true,
- 			outputStyle: 'compact',
- 			//outputStyle: 'compressed',
+ 			//outputStyle: 'compact',
+ 			outputStyle: 'compressed',
  			// outputStyle: 'nested',
  			// outputStyle: 'expanded',
  			precision: 10

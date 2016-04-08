@@ -8,6 +8,8 @@ Version: 1.0
 Text Domain: realmatch360
 */
 
+
+
 /* Normalize */
 
 @import 'normalize';
@@ -22,6 +24,14 @@ Text Domain: realmatch360
 /* Featherlight */
 
 @import 'featherlight';
+
+/* Core min css */
+@import 'core.min';
+
+/* Content Styles */
+@import 'content/content';
+
+
 
 /* Popover */
 
