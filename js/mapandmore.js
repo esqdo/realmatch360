@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	app.dict.lang="de";app.dict.tokens={"login_to_see_reports":"Um diese Reports anzusehen m\u00fcssen Sie angemeldet sein"};
-	
+
 
 	var url = window.location.href;
 	var msRegionRegexp = /#msRegion-([0-9]+)/g;
@@ -153,9 +153,9 @@ jQuery(document).ready(function($) {
 
 
 	$(".map").on("click", "area", function(e) {
-        
-        
-        
+
+
+
         var areaEl           = $(this);
         var msRegion         = areaEl.data("msregion");
         var msRegionProfiles = areaEl.data("msregion-profiles");
@@ -173,13 +173,13 @@ jQuery(document).ready(function($) {
         }
 
 
-        
-        
-        
 
-        
-        
-        
+
+
+
+
+
+
         var calculateCenter = function(areaEl) {
             var coordsX     = [];
             var coordsY     = [];
@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
                 }
             });
 
-            
+
             var i    = 0;
             var area = 0.0;
             while (i < countPoints-1) {
@@ -206,7 +206,7 @@ jQuery(document).ready(function($) {
                 area *= -1;
             }
 
-            
+
             var sumX = 0.0;
             var sumY = 0.0;
             i        = 0;
@@ -218,13 +218,13 @@ jQuery(document).ready(function($) {
             var x  = (1/ (6*area) ) * sumX *-1;
             var y  = (1/ (6*area) ) * sumY *-1;
 
-            
+
             return { x: x, y: y };
         };
 
-        
-        
-        
+
+
+
         var calculatePrice = function() {
             var cost    = 0;
 
@@ -247,9 +247,9 @@ jQuery(document).ready(function($) {
             $(".price-report-total").fadeOut(200).html(app.format.money(cost)).fadeIn(200);
         };
 
-        
-        
-        
+
+
+
         var collectSelectedCity = function() {
             var selection = [ ];
 
@@ -272,18 +272,18 @@ jQuery(document).ready(function($) {
 			return selection;
 		};
 
-        
-        
-        
+
+
+
         var checkLoginStatus = function() {
             app.ajax.post("subscription.checkLoginStatus", { }, function(response) {
                 return response == 1;
             });
         };
 
-        
-        
-        
+
+
+
         var toggleMaphilight = function(areaEl, alwaysOn) {
             var data = areaEl.data('maphilight') || { };
 
@@ -296,13 +296,13 @@ jQuery(document).ready(function($) {
             areaEl.data('maphilight', data).trigger('alwaysOn.maphilight');
         };
 
-        
-        
-        
 
-        
-        
-        
+
+
+
+
+
+
         if (popover) {
             $("area").each(function() {
                 var areaEl  = $(this);
@@ -314,14 +314,14 @@ jQuery(document).ready(function($) {
             popover.toggle();
         }
 
-        
-        
-        
+
+
+
         toggleMaphilight(areaEl, true);
 
-        
-        
-        
+
+
+
         if( responsive ) {
             var popoverContainer = '#element-to-pinup-popover-when-area-is-hidden';
         } else {
@@ -338,19 +338,19 @@ jQuery(document).ready(function($) {
             content: "<img style='margin-top: 20px;' src='http://realmatch360.com/app/static/img/spinner-small.gif'>;",
             container: popoverContainer
         });
-        
+
         areaEl.popover('show');
         $(".popover-content").addClass("popover-content-temp text-center");
 
         $(".popover-title").addClass("popover-title-map");
 
-        
+
         popover  = $(".popover");
         popover.addClass("popover-subscription");
 
-        
-        
-        
+
+
+
         if( responsive ) {
             var position  = {
                 x: $('#element-to-pinup-popover-when-area-is-hidden').offset().left,
@@ -360,15 +360,15 @@ jQuery(document).ready(function($) {
             var position  = calculateCenter(areaEl);
         }
 
-        
+
         if (position.x + popover.width() > mapWidth + 50) {
-            
+
             left = (mapWidth - (position.x + popover.width())) * -1;
 
         } else {
             left = popover.width()/4;
 
-            
+
             if (position.x - left < 0 ) {
                 left = popover.width()/4 + (position.x - left - 5); // 5 = 'margin'
             }
@@ -381,7 +381,7 @@ jQuery(document).ready(function($) {
         );
         $(".arrow").css("left", left);
 
-        
+
         app.ajax.post("subscription.regionForm", { msRegion: msRegion }, function(response) {
             $(".popover-content").removeClass("text-center").html(response).removeClass("popover-content-temp", 400);
             var btnPopover  = $(".btn-popover");
@@ -414,7 +414,7 @@ jQuery(document).ready(function($) {
 				btnPopover.removeClass("disabled");
 				return true;
 
-				
+
 
 			});
 
@@ -432,9 +432,9 @@ jQuery(document).ready(function($) {
                 }
             });
 
-            
-            
-            
+
+
+
             popover.on("change", "input[type=radio]:visible", function() {
                 calculatePrice();
             });
@@ -443,9 +443,9 @@ jQuery(document).ready(function($) {
                 calculatePrice();
             });
 
-            
-            
-            
+
+
+
             $(".btn-confirm-selection").on("click", function() {
                 var button  = $(this);
                 var content = $(".popover-content");
@@ -511,15 +511,14 @@ jQuery(document).ready(function($) {
                 }, "html");
 
             });
-        }, "html"); 
+        }, "html");
 
         $(".popover-title").css("position", "relative");
 
-        
+
         $(".close-button").on("click", function() {
             toggleMaphilight(areaEl, false);
             popover.remove();
          });
     });
 });
-
