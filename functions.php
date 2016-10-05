@@ -21,8 +21,8 @@ include_once('inc/customfields/team.php');
  * Enqueue scripts and styles.
  */
 function realmatch_scripts() {
+  //wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/assets/scss/grid.css' );
   wp_enqueue_style( 'realmatch360-styles', get_template_directory_uri() . '/style.min.css' );
-  wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/assets/scss/grid.css' );
   wp_deregister_script( 'jquery' );
   wp_register_script( 'jquery',get_template_directory_uri() . '/js/all.js' , false, null );
   wp_enqueue_script( 'jquery' );

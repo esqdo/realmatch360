@@ -1,0 +1,342 @@
+/* =============================================================================
+   Base 966px Grid
+   ========================================================================== */
+
+	body {min-width: 1028px;height:auto;}
+
+	/* Container */
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1028px;
+    height:auto;
+	}
+
+	/* Global */
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		display: inline;
+		float: left;
+		padding-left: 20px;
+		padding-right:20px;
+		min-height: 1px;
+		height:auto;
+	}
+
+	.push_1, .pull_1,
+	.push_2, .pull_2,
+	.push_3, .pull_3,
+	.push_4, .pull_4,
+	.push_5, .pull_5,
+	.push_6, .pull_6,
+	.push_7, .pull_7,
+	.push_8, .pull_8,
+	.push_9, .pull_9,
+	.push_10, .pull_10,
+	.push_11, .pull_11 {
+		position: relative;
+	}
+
+	/* Children (Alpha ~ First, Omega ~ Last) */
+	.alpha {padding-left: 0;}
+	.omega {padding-right: 0;}
+
+    /* Between things etc. */
+    .less {padding-right:10px;}
+    .more {padding-left:10px;}
+
+
+	/* Base Grid */
+	.container .grid_1 {width: 64px;}
+	.container .grid_2 {width: 148px;}
+	.container .grid_3 {width: 232px;}
+	.container .grid_4 {width: 316px;}
+	.container .grid_5 {width: 400px;}
+	.container .grid_6 {width: 484px;}
+	.container .grid_7 {width: 568px;}
+	.container .grid_8 {width: 652px;}
+	.container .grid_9 {width: 736px;}
+	.container .grid_10 {width: 820px;}
+	.container .grid_11 {width: 904px;}
+	.container .grid_12 {width: 988px;}
+
+	/* Prefix Extra Space */
+	.container .prefix_1 {padding-left: 104px;}
+	.container .prefix_2 {padding-left: 188px;}
+	.container .prefix_3 {padding-left: 272px;}
+	.container .prefix_4 {padding-left: 356px;}
+	.container .prefix_5 {padding-left: 440px;}
+	.container .prefix_6 {padding-left: 524px;}
+	.container .prefix_7 {padding-left: 608px;}
+	.container .prefix_8 {padding-left: 692px;}
+	.container .prefix_9 {padding-left: 776px;}
+	.container .prefix_10 {padding-left: 860px;}
+	.container .prefix_11 {padding-left: 944px;}
+
+
+.ml84{margin-left:104px;}
+.ml168{margin-left:188px;}
+.ml252{margin-left:272px;}
+.ml336{margin-left:356px;}
+.ml420{margin-left:440px;}
+.ml504{margin-left:524px;}
+.ml588{margin-left:608px;}
+.ml672{margin-left:692px;}
+.ml756{margin-left:776px;}
+.ml840{margin-left:860px;}
+.ml924{margin-left:944px;}
+.ml1008{margin-left:1028px;}
+
+	/* Suffix Extra Space */
+	.container .suffix_1 {padding-right: 104px;}
+	.container .suffix_2 {padding-right: 188px;}
+	.container .suffix_3 {padding-right: 272px;}
+	.container .suffix_4 {padding-right: 356px;}
+	.container .suffix_5 {padding-right: 440px;}
+	.container .suffix_6 {padding-right: 524px;}
+	.container .suffix_7 {padding-right: 608px;}
+	.container .suffix_8 {padding-right: 692px;}
+	.container .suffix_9 {padding-right: 776px;}
+	.container .suffix_10 {padding-right: 860px;}
+	.container .suffix_11 {padding-right: 944px;}
+
+	/* Push Space */
+	.container .push_1 {left: 104px;}
+	.container .push_2 {left: 188px;}
+	.container .push_3 {left: 272px;}
+	.container .push_4 {left: 356px;}
+	.container .push_5 {left: 440px;}
+	.container .push_6 {left: 524px;}
+	.container .push_7 {left: 608px;}
+	.container .push_8 {left: 692px;}
+	.container .push_9 {left: 776px;}
+	.container .push_10 {left: 860px;}
+	.container .push_11 {left: 944px;}
+
+	/* Pull Space */
+	.container .pull_1 {left: -104px;}
+	.container .pull_2 {left: -188px;}
+	.container .pull_3 {left: -272px;}
+	.container .pull_4 {left: -356px;}
+	.container .pull_5 {left: -440px;}
+	.container .pull_6 {left: -524px;}
+	.container .pull_7 {left: -608px;}
+	.container .pull_8 {left: -692px;}
+	.container .pull_9 {left: -776px;}
+	.container .pull_10 {left: -860px;}
+	.container .pull_11 {left: -944px;}
+
+	/* Images & Other Objects */
+	img, object, embed {	max-width: 100%;}
+	img { height: auto; }
+
+
+/* =============================================================================
+   768px Grid
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+	body {min-width: 768px;}
+
+	/* Container | 768px */
+	.container {width: 768px;}
+
+	/* Global | 768px */
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		}
+
+
+	/* Base Grid | 768px */
+	.container .grid_1 {width: 48px;}
+	.container .grid_2 {width: 112px;}
+	.container .grid_3 {width: 167px;}
+	.container .grid_4 {width: 222px;}
+	.container .grid_5 {width: 304px;}
+	.container .grid_6 {width: 354px;}
+	.container .grid_7 {width: 432px;}
+	.container .grid_8 {width: 729px;}
+	.container .grid_9 {width: 541px;}
+	.container .grid_10 {width: 624px;}
+	.container .grid_11 {width: 688px;}
+	.container .grid_12 {width: 728px;}
+
+	/* Prefix Extra Space | 768px */
+	.container .prefix_1 {padding-left: 64px;}
+	.container .prefix_2 {padding-left: 128px;}
+	.container .prefix_3 {padding-left: 192px;}
+	.container .prefix_4 {padding-left: 256px;}
+	.container .prefix_5 {padding-left: 320px;}
+	.container .prefix_6 {padding-left: 384px;}
+	.container .prefix_7 {padding-left: 448px;}
+	.container .prefix_8 {padding-left: 512px;}
+	.container .prefix_9 {padding-left: 576px;}
+	.container .prefix_10 {padding-left: 640px;}
+	.container .prefix_11 {padding-left: 704px;}
+
+	/* Suffix Extra Space | 768px */
+	.container .suffix_1 {padding-right: 64px;}
+	.container .suffix_2 {padding-right: 128px;}
+	.container .suffix_3 {padding-right: 192px;}
+	.container .suffix_4 {padding-right: 256px;}
+	.container .suffix_5 {padding-right: 320px;}
+	.container .suffix_6 {padding-right: 384px;}
+	.container .suffix_7 {padding-right: 448px;}
+	.container .suffix_8 {padding-right: 512px;}
+	.container .suffix_9 {padding-right: 576px;}
+	.container .suffix_10 {padding-right: 640px;}
+	.container .suffix_11 {padding-right: 704px;}
+
+	/* Push Space | 768px */
+	.container .push_1 {left: 64px;}
+	.container .push_2 {left: 128px;}
+	.container .push_3 {left: 192px;}
+	.container .push_4 {left: 256px;}
+	.container .push_5 {left: 320px;}
+	.container .push_6 {left: 384px;}
+	.container .push_7 {left: 448px;}
+	.container .push_8 {left: 512px;}
+	.container .push_9 {left: 576px;}
+	.container .push_10 {left: 640px;}
+	.container .push_11 {left: 704px;}
+
+	/* Pull Space | 768px */
+	.container .pull_1 {left: -64px;}
+	.container .pull_2 {left: -128px;}
+	.container .pull_3 {left: -192px;}
+	.container .pull_4 {left: -256px;}
+	.container .pull_5 {left: -320px;}
+	.container .pull_6 {left: -384px;}
+	.container .pull_7 {left: -448px;}
+	.container .pull_8 {left: -512px;}
+	.container .pull_9 {left: -576px;}
+	.container .pull_10 {left: -640px;}
+	.container .pull_11 {left: -704px;}
+
+	/* Children (Alpha ~ First, Omega ~ Last) | 768 */
+	.alpha {margin-left: 0;}
+	.omega {margin-right: 0;}
+}
+
+
+/* =============================================================================
+   Less than 768px
+   ========================================================================== */
+
+@media only screen and (max-width: 767px) {
+
+	body{min-width:0;}
+
+	/* Container */
+	.container { margin:0 auto; width:456px;  }
+
+	/* Global */
+	.container .grid_1,
+	.container .grid_2,
+	.container .grid_3,
+	.container .grid_4,
+	.container .grid_5,
+	.container .grid_6,
+	.container .grid_7,
+	.container .grid_8,
+	.container .grid_9,
+	.container .grid_10,
+	.container .grid_11,
+	.container .grid_12	{
+		width:416px;
+		clear: both;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		display:inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		/* IE 6&7 */
+		zoom:1;
+		*display:inline;
+	}
+
+	/* Nested children need no padding */
+	.grid_1  .grid_1,
+	.grid_2  .grid_1, .grid_2  .grid_2,
+	.grid_3  .grid_1, .grid_3  .grid_2, .grid_3  .grid_3,
+	.grid_4  .grid_1, .grid_4  .grid_2, .grid_4  .grid_3, .grid_4  .grid_4,
+	.grid_5  .grid_1, .grid_5  .grid_2, .grid_5  .grid_3, .grid_5  .grid_4, .grid_5  .grid_5,
+	.grid_6  .grid_1, .grid_6  .grid_2, .grid_6  .grid_3, .grid_6  .grid_4, .grid_6  .grid_5, .grid_6  .grid_6,
+	.grid_7  .grid_1, .grid_7  .grid_2, .grid_7  .grid_3, .grid_7  .grid_4, .grid_7  .grid_5, .grid_7  .grid_6, .grid_7  .grid_7,
+	.grid_8  .grid_1, .grid_8  .grid_2, .grid_8  .grid_3, .grid_8  .grid_4, .grid_8  .grid_5, .grid_8  .grid_6, .grid_8  .grid_7, .grid_8  .grid_8,
+	.grid_9  .grid_1, .grid_9  .grid_2, .grid_9  .grid_3, .grid_9  .grid_4, .grid_9  .grid_5, .grid_9  .grid_6, .grid_9  .grid_7, .grid_9  .grid_8, .grid_9  .grid_9,
+	.grid_10  .grid_1, .grid_10  .grid_2, .grid_10  .grid_3, .grid_10  .grid_4, .grid_10  .grid_5, .grid_10  .grid_6, .grid_10  .grid_7, .grid_10  .grid_8, .grid_10  .grid_9, .grid_10  .grid_10,
+	.grid_11  .grid_1, .grid_11  .grid_2, .grid_11  .grid_3, .grid_11  .grid_4, .grid_11  .grid_5, .grid_11  .grid_6, .grid_11  .grid_7, .grid_11  .grid_8, .grid_11  .grid_9, .grid_11  .grid_10, .grid_11  .grid_11,
+	.grid_12  .grid_1, .grid_12  .grid_2, .grid_12  .grid_3, .grid_12  .grid_4, .grid_12  .grid_5, .grid_12  .grid_6, .grid_12  .grid_7, .grid_12  .grid_8, .grid_12  .grid_9, .grid_12  .grid_10, .grid_12  .grid_11, .grid_12  .grid_12	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.container .push_1, .container .push_2,
+	.container .push_3, .container .push_4,
+	.container .push_5, .container .push_6,
+	.container .push_7, .container .push_8,
+	.container .push_9, .container .push_10,
+	.container .push_11	{
+		left: 0;
+	}
+	.container .pull_1, .container .pull_2,
+	.container .pull_3, .container .pull_4,
+	.container .pull_5, .container .pull_6,
+	.container .pull_7, .container .pull_8,
+	.container .pull_9, .container .pull_10,
+	.container .pull_11	{
+		left: 0;
+	}
+}
+
+
+/* =============================================================================
+   Less than 480px
+   ========================================================================== */
+@media only screen and (max-width: 479px) {
+
+	/* Container */
+
+	.container { width:300px;}
+
+	/* Global */
+
+	.container .grid_1,
+	.container .grid_2,
+	.container .grid_3,
+	.container .grid_4,
+	.container .grid_5,
+	.container .grid_6,
+	.container .grid_7,
+	.container .grid_8,
+	.container .grid_9,
+	.container .grid_10,
+	.container .grid_11,
+	.container .grid_12	{
+		width:260px;
+	}
+}
