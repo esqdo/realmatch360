@@ -22,7 +22,7 @@ get_header(); ?>
 <div class="container">
     <p class="grid_3"><a href="http://www.realmatch360.com/kontaktformular/" class="mailadress">info@realmatch360.com</a></p>
     <p class="grid_3 alpha telefon"><i class="icon-call-end"></i>+41 44 500 96 30</p>
-    <p class="grid_3 alpha"><a href="<?php echo get_permalink(icl_object_id(940,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Adhoc order form', 'realmatch'); ?></a></p>
+    <p class="grid_3 alpha"><a href="<?php echo get_permalink(icl_object_id(940,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Adhoc order form', 'realmatch360'); ?></a></p>
     <h2 class="grid_12 team-title"><?php the_field('consulting'); ?></h2>
      <?php
     $advisors =  new WP_Query( 'post_type=sales' );

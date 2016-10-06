@@ -1,7 +1,7 @@
 <?php
 add_action( 'after_setup_theme', 'realmatch360_setup' );
 function realmatch360_setup() {
-  load_theme_textdomain( 'realmatch', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'realmatch360', get_template_directory() . '/languages' );
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'post-thumbnails' );
 }

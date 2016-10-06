@@ -33,13 +33,13 @@
 		</div>
         <div class="form-group">
             <div class="col-lg-12">
-                <input type="checkbox" name="rememberMe" value="true"><?php _e('Remember Me', 'realmatch'); ?><br>
+                <input type="checkbox" name="rememberMe" value="true"><?php _e('Remember Me', 'realmatch360'); ?><br>
             </div>
         </div>
 		<div class="form-group">
 			<div class="col-lg-12">
 				<input type="hidden"  name="msregion" value="">
-				<button type="submit" data-loading-text="<?php _e('Checking...', 'realmatch'); ?>" class="btn btn-default col-lg-12 btn-login-ajax"><?php _e('Login', 'realmatch360'); ?></button>
+				<button type="submit" data-loading-text="<?php _e('Checking...', 'realmatch360'); ?>" class="btn btn-default col-lg-12 btn-login-ajax"><?php _e('Login', 'realmatch360'); ?></button>
 			</div>
 		</div>
 

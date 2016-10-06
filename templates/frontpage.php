@@ -30,12 +30,12 @@ get_header(); ?>
         </div>
 
         <div class="featuredslidenav">
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch'); ?></a>
-            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch'); ?></a>
-            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch'); ?></a>
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id($id, 'post', false)); ?> "><?php _e('More Information', 'realmatch360'); ?></a>
+            <a class="button featuredbutton" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch360'); ?></a>
+            <a class="button featuredbutton playbutton" data-featherlight="#fl3" href="#"><?php _e('Play Video', 'realmatch360'); ?></a>
 
        </div>
-        <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/<?php _e('118894194', 'realmatch'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
+        <iframe class="fl3" id="fl3"  frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/<?php _e('118894194', 'realmatch360'); ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=147a75;"></iframe>
         <div class="featureddesktop"><?php the_post_thumbnail('featured_desktop'); ?></div>
          <div class="featuredtablet"><?php the_post_thumbnail('featured_tablet'); ?></div>
          <div class="featuredsmall"><?php the_post_thumbnail('featured_small'); ?></div>
@@ -252,11 +252,11 @@ get_header(); ?>
                     <h3 class="feedtitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <div class="blogexcerpt"><?php the_excerpt(); ?></div>
                     <div class="clear"></div>
-                    <a class="readmore" href="<?php the_permalink(); ?>"><?php _e('Read More', 'realmatch'); ?></a>
+                    <a class="readmore" href="<?php the_permalink(); ?>"><?php _e('Read More', 'realmatch360'); ?></a>
                         <?php endwhile; ?>
-                    <a class="" href="<?php echo get_permalink(icl_object_id(65,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('More Articles', 'realmatch'); ?></a>
+                    <a class="" href="<?php echo get_permalink(icl_object_id(65,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('More Articles', 'realmatch360'); ?></a>
                                     <?php endif; wp_reset_postdata(); ?>
-                    <!-- <h3><?php /* _e('Beliebte Artikel', 'realmatch'); ?></h3>
+                    <!-- <h3><?php /* _e('Beliebte Artikel', 'realmatch360'); ?></h3>
           <?php the_field('popular'); */?> -->
                     </div>
 
@@ -264,7 +264,7 @@ get_header(); ?>
 
 
        <div class="twitterbadge">
-                <h3 class="feedtitle"><?php _e('Twitter @ImmoDigest', 'realmatch'); ?>
+                <h3 class="feedtitle"><?php _e('Twitter @ImmoDigest', 'realmatch360'); ?>
 <div class="twitterbutton"><a href="https://twitter.com/ImmoDigest" class="twitter-follow-button" data-show-count="false" data-lang="de" data-size="large" data-show-screen-name="true">@ImmoDigest folgen</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
