@@ -1,0 +1,15 @@
+.partners {
+  background-color:$greencolor;
+  margin-top:10px;
+  & h2 {
+    color:$white;
+    padding:15px 22px 0 22px;
+  }
+  &__images {
+    padding:10px;
+    & p {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

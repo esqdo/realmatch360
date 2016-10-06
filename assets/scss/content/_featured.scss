@@ -1,0 +1,118 @@
+.usewrp {
+  padding:0 22px;
+}
+
+.usewrp h3 {
+  font-family: 'LatoLatinLight';
+  text-transform: none;
+}
+
+
+.points {
+  margin-left: 40px;
+  list-style-position: outside;
+}
+
+.points li {
+  margin: 0 0 30px 0;
+  list-style-type: disc;
+  color:#FFF;
+  padding-left:10px;
+}
+.points h3 {
+  color:#FFF;
+  font-family: 'LatoLatinLight';
+  text-transform: none;
+}
+
+.questionwrapper {
+  color: #26686d;
+}
+
+.question {
+  height:175px;
+  border-top: 7px #26686d solid;
+  border-bottom: 1px #26686d solid;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+.stretch {
+  height: 235px;
+}
+
+.featured {
+  &__questions {
+    margin-top: 10px;
+    background:$beige;
+    & h2 {
+      padding:15px 20px 15px 20px;
+      color:$greencolor;
+      & span {
+        font-family: 'dosisregular';
+      }
+    }
+  }
+  &__questions-wrapper {
+    display: flex;
+    justify-content: space-around;
+    & .questionwrapper {
+      flex-basis: 30%;
+    }
+    & .question {
+      & h3 {
+        height:60px;
+      }
+      & h4 {
+        text-transform: none;
+        font-family:'LatoLatinLight';
+      }
+
+    }
+  }
+
+  &__testimonial {
+    background-color: $greencolor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.testimonial {
+  &__image {
+    padding:50px 0;
+    flex-basis:25%;
+    & img {
+      border-radius: 100%;
+    }
+  }
+  &__text {
+    flex-basis:55%;
+    color:#FFF;
+    & h4 {
+      color:#FFF;
+    }
+    & p {
+      font-size:1.8rem;
+    }
+  }
+}
+
+/* Customers */
+
+.customerwrp {
+  margin-top:10px;
+  float:left;
+  background:#e8e7dc;
+  padding:0px 0 30px 0;
+  color: #26686d;
+}
+
+.customerwrp h2 {
+  color:#FFF;
+  margin-bottom: 30px;
+  margin-top: 0;
+  background-color: #26686d;
+  line-height: 45px;
+}

@@ -1,0 +1,103 @@
+html {
+  font-family: 'LatoLatinLight', sans-serif;
+  box-sizing: border-box;
+  height:100%;
+}
+
+body {
+  font-family: 'LatoLatinLight', sans-serif;
+  font-weight:300;
+  line-height: 22px;
+  color: #26686d;
+  word-wrap:break-word;
+  background: url(assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+}
+
+h1 {  /* «Wir wissen wo wer wohnen will» */
+  font-family: 'geogrotesquesemibold', sans-serif;
+  font-size: 3.6rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #26686d;    /* plus #FFF */
+}
+
+h2 {
+  font-family: 'geogrotesquesemibold', sans-serif;
+  font-size: 3rem;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #26686d;    /* plus #FFF */
+}
+
+h3 {
+  font-family: 'geogrotesquesemibold', sans-serif;
+  font-size: 2rem;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #26686d;    /* plus #FFF */
+}
+
+h4 {
+  font-family: 'geogrotesquesemibold', sans-serif;
+  font-size: 1.8rem;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #26686d;    /* plus #FFF */
+}
+
+p {font-size:1.6rem;margin-bottom:10px;}
+ul {font-size:1.6rem;}
+
+/* link Basics */
+
+a {
+  font-size:1.6rem;
+  color:#F29100;
+  text-decoration: none;
+  &:link {
+    color:#F29100;
+    text-decoration: none;
+  }
+  &:visited {
+    color:#F29100;
+  }
+  &:hover, &:focus {
+    color:#fda04e;
+  }
+}
+
+#content {
+  padding:20px 0;
+}
+
+strong, b, .bold {
+  font-family: 'LatoBold';
+}
+
+.nobackground {
+  background: $greencolor;
+  height:auto;
+  margin:10px;
+}
+.whitebackground {
+  background: $white;
+}
+
+#wrapper {
+  padding-top:15px;
+}
+
+.inbound-label {
+  font-family: 'LatoLatinLight';
+}

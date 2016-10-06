@@ -7,7 +7,7 @@ function realmatch360_setup() {
 }
 
 /* Advanced Custom Fields */
-define( 'ACF_LITE', true );
+define( 'ACF_LITE', false );
 include_once('inc/advanced-custom-fields/acf.php');
 /* Include Custom Fields */
 include_once('inc/customfields/employee.php');
@@ -21,7 +21,6 @@ include_once('inc/customfields/team.php');
  * Enqueue scripts and styles.
  */
 function realmatch_scripts() {
-  //wp_enqueue_style( 'simplegrid', get_template_directory_uri() . '/assets/scss/grid.css' );
   wp_enqueue_style( 'realmatch360-styles', get_template_directory_uri() . '/style.min.css' );
   wp_deregister_script( 'jquery' );
   wp_register_script( 'jquery',get_template_directory_uri() . '/js/all.js' , false, null );
@@ -60,14 +59,22 @@ return $title . esc_attr( get_bloginfo( 'name' ) );
 add_action( 'widgets_init', 'blankslate_widgets_init' );
 function blankslate_widgets_init()
 {
-register_sidebar( array (
-'name' => __( 'Sidebar Widget Area', 'realmatch360' ),
-'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => "</li>",
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
+	register_sidebar( array (
+	'name' => __( 'Sidebar Widget Area', 'realmatch360' ),
+	'id' => 'primary-widget-area',
+	'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+	'after_widget' => "</li>",
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+	) );
+	register_sidebar( array (
+		'name' => __( 'Footer Column1 Widget Area', 'realmatch360' ),
+		'id' => 'footer-column1-widget-area',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => "</div>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 
 /*
@@ -111,7 +118,8 @@ return $count;
 }
 register_nav_menus( array(
 	'footer_menu' => 'Footer Navigation',
-    'featured-menu' => 'Featured Navigation'
+  	'featured-menu' => 'Featured Navigation',
+  	'main-menu' => 'Main Navigation'
 ) );
 
 //Register Custom Post Types

@@ -33,5 +33,18 @@ function create_post_type() {
 		)
 	);
 
+	/* Service Post-Type */
+	register_post_type( 'services',
+		array(
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' )
+			),
+			'public' => true,
+			'has_archive' => false,
+			'supports' => array( 'title','editor','revisions', 'thumbnail' ),
+		)
+	);
+
 }
 ?>

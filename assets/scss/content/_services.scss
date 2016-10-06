@@ -1,0 +1,33 @@
+.services {
+  margin-top:10px;
+  background-color: $greencolor;
+  & h2 {
+    color: $white;
+    padding:30px 22px;
+    text-align: center;
+  }
+  &__wrapper {
+    display:flex;
+  }
+  &__service {
+    padding: 22px;
+  }
+  &__content {
+    color:$white;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    & h3 {
+      padding:20px 0;
+      color:$white;
+      flex-basis:75px;
+    }
+    & p {
+      margin:0;
+      flex-basis: 100px;
+    }
+  }
+  &__imagewrapper {
+    height:205px;
+  }
+}

@@ -10,8 +10,6 @@
 </div>
 
 </section>
-    <div class="clear"></div>
-<section id="site-description" class="grid_12"><h1> <?php echo get_bloginfo ( 'description' );  ?></h1></section><div class="clear"></div>
 
 </header>
 

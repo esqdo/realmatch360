@@ -1,89 +1,61 @@
 <?php get_header ( "featured" ); ?>
 
-<section class="container">
+<section class="container featured">
 
-<section class="content container" role="main">
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- Testimonial -->
+<section class="featured__testimonial container" role="main">
+    <div class="testimonial__image">
+        <?php
+        $image = get_field('testimonial_picture');
+        if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+    </div>
+    <div class="testimonial__text">
+        <h4 class="testimonial__quote"><?php the_field('testimonial'); ?></h4>
+        <p class="testimonial__person"><?php the_field('testimonial_person'); ?></p>
+    </div>
+</section>
+<!-- Testimonial -->
 
+<!-- Questions -->
+<section class="container featured__questions">
 
-
-<div class="featuredpoints grid_6 omega">
-    <header class="header">
-        <h2 class="grid_5 omega featuredtitle"><?php _e('For ', 'realmatch'); ?><?php the_title(); ?></h2>
-    </header>
- 	<div class="clear"></div>
-  <div class="points">
-      <?php the_content(); ?>
-  </div>
-
- <div class="featuredsinglenav">
-                <a class="button" href="<?php echo get_permalink(icl_object_id(8490,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Productdetails', 'realmatch'); ?></a>
-                <a class="button" href="<?php echo get_permalink(icl_object_id(17,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('Get an Appointment', 'realmatch'); ?></a>
+    <h2><?php the_field('nutzentitel'); ?></h2>
+    <div class="featured__questions-wrapper">
+        <div class="questionwrapper">
+            <div class="question stretch">
+                <?php the_field('frage1'); ?>
+            </div>
+            <?php the_field('antwort1'); ?>
         </div>
 
-</div>
-<div class="featuredscreenshot grid_6 omega">
-    <div class="navclear"></div>
-    <?php
+        <div class="questionwrapper">
+            <div class="question stretch">
+                <?php the_field('frage2'); ?>
+            </div>
+            <?php the_field('antwort2'); ?>
+        </div>
 
-$image = get_field('featuredscreenshot');
-
-if( !empty($image) ): ?>
-
-	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif; ?>
-
-
+        <div class="questionwrapper">
+            <div class="question stretch">
+                <?php the_field('frage3'); ?>
+            </div>
+            <?php the_field('antwort3'); ?>
+        </div>
     </div>
 
-
-
 </section>
-<section class="page-content">
+<!-- Questions -->
 
-
-<section class="usewrp container">
-<h2 class="grid_12"><?php the_field('nutzentitel'); ?></h2>
-<div class="grid_4 omega questionwrapper">
-<div class="question stretch">
-<h3><?php the_field('frage1'); ?></h3>
-</div>
-<?php the_field('antwort1'); ?>
-</div>
-<div class="grid_4 omega questionwrapper">
-<div class="question stretch">
-<h3><?php the_field('frage2'); ?></h3>
-</div>
-<?php the_field('antwort2'); ?>
-</div>
-<div class="grid_4 omega questionwrapper">
-<div class="question stretch">
-<h3><?php the_field('frage3'); ?></h3>
-</div>
-<?php the_field('antwort3'); ?>
-</div>
-
-</section>
+<!-- Customers -->
 <section class="customerwrp">
-<?php the_field('kunden'); ?>
-
+    <?php the_field('kunden'); ?>
 </section>
-<div class="container">
-                 <?php
-                $offer =  new WP_Query( 'post_type=offers' );
-                while ($offer->have_posts()) {
-                        $offer->the_post();
-                        ?>
-                    <div class="offer">
-                        <?php the_content(); ?>
-                      </div>
-                <?php
-            }
-            ?>
+<!-- Customers -->
 
-</div>
-</section>
 
 
 <div class="clear"></div>
