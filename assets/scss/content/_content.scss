@@ -869,6 +869,17 @@ h2.page-title span, .usewrp span {
     float:right;
     background: #e8e7db;
     padding: 20px;
+  & ul {
+    list-style: none;
+  }
+}
+
+.xoxo {
+  list-style: none;
+  padding-left:0;
+  & ul {
+    padding-left:10px;
+  }
 }
 
 .sidebar li {

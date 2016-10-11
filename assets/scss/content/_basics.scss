@@ -79,6 +79,13 @@ a {
 
 #content {
   padding:20px 0;
+  & article {
+    padding: 22px 0;
+  }
+}
+
+#blogcontent {
+  background:$greencolor;
 }
 
 strong, b, .bold {

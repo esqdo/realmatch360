@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="container">
-<section id="content" role="main" class="grid_9 omega">
+<section id="blogcontent" role="main" class="grid_9 omega">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
 <?php comments_template(); ?>
