@@ -77,21 +77,6 @@ Template Name: Dienstleistungen
 
 </section>
 
-    <div class="clear"></div>
-    <div class="offerwrp">
-            <div class="container">
-                             <?php
-                $offer =  new WP_Query( 'post_type=offers' );
-                while ($offer->have_posts()) {
-                        $offer->the_post();
-                        ?>
-                    <?php the_content(); ?>
-                <?php
-            }
-            ?>
-            </div>
-    </div>
-
 
 <?php edit_post_link(); ?>
 </section>

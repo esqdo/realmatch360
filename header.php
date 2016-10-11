@@ -7,10 +7,4 @@
 <!-- Header buttons (Language Selector, Login, Contact) -->
 <?php include 'inc/header/header.php' ?>
 
-</div>
-
-</section>
-
-</header>
-
 <div id="container">

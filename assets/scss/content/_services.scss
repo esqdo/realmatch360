@@ -8,9 +8,15 @@
   }
   &__wrapper {
     display:flex;
+    @include max-width(md) {
+      flex-direction: column;
+    }
   }
   &__service {
     padding: 22px;
+    @include max-width(md) {
+      padding:11px;
+    }
   }
   &__content {
     color:$white;
@@ -21,13 +27,26 @@
       padding:20px 0;
       color:$white;
       flex-basis:75px;
+      @include max-width(md) {
+        flex-basis:auto;
+      }
     }
     & p {
       margin:0;
       flex-basis: 100px;
+      @include max-width(md) {
+        flex-basis:auto;
+      }
     }
   }
   &__imagewrapper {
     height:205px;
+    @include max-width(md) {
+      height:auto;
+      & img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
 }

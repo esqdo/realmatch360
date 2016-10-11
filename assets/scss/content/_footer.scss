@@ -7,17 +7,32 @@
   color:#3c7376;
   & .footer-widgets {
     display:flex;
+    @include max-width(sm) {
+      padding:0 11px;
+      flex-direction: column;
+    }
     & > * {
       border-right:1px solid grey;
+      @include max-width(sm) {
+        border-right: none;
+        border-top:1px solid grey;
+      }
     }
-    & :last-child {
+    & div:last-child {
       border:none;
+      @include max-width(sm) {
+      }
     }
     & .latest-post {
       flex-basis:45%;
       color:#26686d;
       background: #e8e7db;
       padding:0 15px;
+      @include max-width(sm) {
+        margin-top: 15px;
+        flex-basis: auto;
+        padding:10px 0 10px 0;
+      }
       & h3 {
         margin-bottom:10px;
       }
@@ -33,6 +48,13 @@
   }
   & .twitterbadge {
     padding-left:15px;
+    @include max-width(sm) {
+      padding:0 0 10px 0;
+      & .feedtitle {
+        border-top: 1px solid grey;
+        padding:10px 0 0 0;
+      }
+    }
   }
   & .twittermeta {
     font-size:0.667em;
@@ -55,6 +77,11 @@
         text-decoration:none;
         color:#F29100;
       }
+    }
+  }
+  @include max-width(sm) {
+    & h3 {
+      margin-top: 10px;
     }
   }
 }

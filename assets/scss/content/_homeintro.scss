@@ -6,6 +6,9 @@
   background: $yellow;
   display:flex;
   padding:30px 22px;
+  @include max-width(sm) {
+    flex-direction: column;
+  }
   &__content {
     & h1 {
       margin: 10px 0;
@@ -21,6 +24,10 @@
   &__play {
     flex-basis:40%;
     position: relative;
+    @include max-width(sm) {
+      position: static;
+      text-align: center;
+    }
     & a {
       color:$greencolor;
       &:hover {
@@ -31,8 +38,11 @@
       font-size:15rem;
       position:absolute;
       top:20%;
-      left:30%;
+      left:5%;
       translate3d: (-50%, -50%, 0);
+      @include max-width(sm) {
+        position: static;
+      }
     }
   }
 }

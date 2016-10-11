@@ -45,7 +45,7 @@ button {
 
 $xs-lower-limit: 480px;
 $sm-lower-limit: 768px;
-$md-lower-limit: 995px;
+$md-lower-limit: 996px;
 
 
 // breakpoint mixins
@@ -66,6 +66,7 @@ $md-lower-limit: 995px;
     }
   }
 }
+
 
 /*@mixin max-width-landscape($breakpoint) {
   @if $breakpoint == xs {

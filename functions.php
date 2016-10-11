@@ -26,7 +26,7 @@ function realmatch_scripts() {
   wp_register_script( 'jquery',get_template_directory_uri() . '/js/all.js' , false, null );
   wp_enqueue_script( 'jquery' );
   //wp_enqueue_script('boot',get_template_directory_uri() . '/assets/js/vendor.min.js',array( 'jquery' ), NULL, true);
-  wp_enqueue_script('responsiveslides',get_template_directory_uri() . '/js/responsiveslides.min.js',array( 'jquery' ));
+  //wp_enqueue_script('responsiveslides',get_template_directory_uri() . '/js/responsiveslides.min.js',array( 'jquery' ));
   wp_enqueue_script('frogaloops',get_template_directory_uri() . '/js/frogaloops.js',array( 'jquery' ));
   wp_enqueue_script( 'maphilight', get_template_directory_uri() . '/js/jquery.maphilight.min.js', array('jquery') );
   wp_enqueue_script('slides',get_template_directory_uri() . '/js/slider.js',array( 'jquery' ));

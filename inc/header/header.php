@@ -2,8 +2,10 @@
 <header id="header" class="container">
 	<!-- Logo -->
 	<div id="site-title">
-		<h1><a href="<?php echo get_home_url(); ?>" alt="Relmatch360">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo" class="logo-img"></a>
+		<h1>
+			<a href="<?php echo get_home_url(); ?>" alt="Relmatch360">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo" class="logo-img">
+			</a>
 		</h1>
 	</div>
 	<!-- Logo -->

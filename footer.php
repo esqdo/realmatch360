@@ -6,6 +6,7 @@
         <div class="footer-widgets">
             <!-- Footer Navigation + Social -->
             <div id="footernav">
+                <h3><?php _e('Informations', 'realmatch360'); ?></h3>
                 <?php if ( is_active_sidebar( 'footer-column1-widget-area' ) ) : ?>
                     <div id="footer-column1" class="widget-area">
                         <?php dynamic_sidebar( 'footer-column1-widget-area' ); ?>

@@ -9,6 +9,9 @@
 @import 'footer';
 @import 'featured';
 
+* {
+  box-sizing: border-box;
+}
 
 #inbound_form_submit, #ninja_forms_form_2_mp_next, #ninja_forms_field_268, .ninja-forms-mp-next, .ninja-forms-mp-prev, div[id^="nf_submit_"] input {
     color:#FFF !important;
@@ -89,6 +92,7 @@ article {
 }
 
 #content {
+    width:100%;
     background-color:#26686d;
     float:left;
 }
@@ -166,58 +170,6 @@ article {
 
 .navclear {
     margin-top:50px;
-}
-
-/* Slidernav tabs */
-
-.projektentwickler, .menu-item-708, .menu-item-1091 {
-    width:22%;
-}
-
-.menu-item-1212 {
-    width:21%;
-}
-
-.investoren, .menu-item-709, .menu-item-1092, .menu-item-1629 {
-    width:18%;
-}
-
-.menu-item-1213, .menu-item-1605 {
-    width:14%;
-}
-
-
-.bewirtschafter-makler, .menu-item-710, .menu-item-1093 {
-    width:21%;
-}
-
-.menu-item-1214 {
-    width:27%;
-}
-
-.bewerter-berater, .menu-item-711, .menu-item-1094 {
-    width:18%;
-}
-
-.menu-item-1628 {
-	width:24%;
-}
-
-.menu-item-1215, .menu-item-1604, .menu-item-1606 {
-    width:22%;
-}
-
-.oeffentliche-hand, .menu-item-712, .menu-item-1095 {
-    width:21%;
-}
-
-.menu-item-1216 {
-    width:16%;
-}
-
-#featuredsubnav a, #featurednav a {
-    display:block;
-    padding:10px 20px;
 }
 
 
@@ -416,7 +368,6 @@ article {
 
 .entry-content {
     color:#FFF;
-
 }
 
 header h1.entry-title, header h1.page-title, .page-content h1 {
@@ -1274,17 +1225,7 @@ img.fb {
 /* Media Queries */
 
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-    body {
-        font-size:95%;
-    }
-    #map {
-        width:728px;
-    }
 
-    #background {
-        width:100%;
-        height:100%;
-    }
 
     .kaeuferprofile {
       margin-left:400px;
@@ -1378,27 +1319,6 @@ img.fb {
     #leftcontent {
         padding-top:20px;
         clear:both;
-    }
-
-    #featurednav a,  #featuredsubnav a {
-        height:45px;
-
-    }
-
-    .menu-item-1213 {
-        width:18%;
-    }
-
-    .menu-item-1214 {
-        width:25%;
-    }
-
-    .menu-item-1215 {
-        width:20%;
-    }
-
-    .projektentwickler, .investoren, .oeffentliche-hand, .menu-item-708,.menu-item-1092,.menu-item-1095, .menu-item-709, .menu-item-712, .menu-item-1092, .menu-item-1213 {
-        line-height:45px;
     }
 
     .registerinput {
@@ -1628,40 +1548,11 @@ img.fb {
 
     /* Slidernav tabs */
 
-    .menu-item-1213 {
-        width:17%;
-        line-height: 44px;
-    }
-
-    .menu-item-1216 {
-        width:13%;
-    }
-
-    .menu-item-1091 {
-        width:23%;
-    }
-
-
-    .projektentwickler, .menu-item-708 {
-        width:23%;
-        line-height:45px;
-    }
-
-    .investoren, .menu-item-709, .menu-item-1092 {
-        width:17%;
-        line-height:45px;
-    }
-
      .employee {
           height:270px;
       }
 
 
-    #featurednav a, #featuredsubnav a {
-        display:block;
-        padding:10px 2px;
-        font-size: 95%;
-    }
 
     .contentblock h2 span {
           margin-right:0;
@@ -1834,11 +1725,7 @@ img.fb {
           padding:5px 5px;
       }
 
-#featuredsubnav li, #featurednav li {
-        width:100%;
-        display: block;
 
-    }
 
     .twittericon img {
         width:10%;
@@ -1862,13 +1749,6 @@ img.fb {
       .latest-post p, .twitterbadge p, .offer p {
           padding-right: 20px;
       }
-
-       .projektentwickler a, .investoren a, .bewirtschafter-makler a, .bewerter-berater a, .oeffentliche-hand a, #featuredsubnav a {
-        display:block;
-        padding:10px 5px;
-       height:25px;
-        line-height: 25px;
-    }
 
    .featuredsinglenav {
        width:auto;
