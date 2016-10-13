@@ -49,4 +49,17 @@
       }
     }
   }
+
+}
+.services__buttons {
+  background: $greencolor;
+  display: flex;
+  justify-content: space-around;
+  padding:30px 0;
+  & .button {
+    margin:0 10px;
+  }
+  &.bottom {
+    margin-top: 10px;
+  }
 }

@@ -1463,6 +1463,9 @@ img.fb{width:100%;border:1px #f00 solid}
 .services__content h3{padding:20px 0;color:#fff;-webkit-flex-basis:120px;-ms-flex-preferred-size:120px;flex-basis:120px}
 .services__content p{margin:0;-webkit-flex-basis:100px;-ms-flex-preferred-size:100px;flex-basis:100px}
 .services__imagewrapper{height:205px}
+.services__buttons{background:#26686d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;padding:30px 0}
+.services__buttons .button{margin:0 10px}
+.services__buttons.bottom{margin-top:10px}
 .customers{margin-top:10px;text-align:center}
 .customers h2{background-color:#e8e7db;padding:30px 22px}
 .customers__wrapper{margin-top:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}

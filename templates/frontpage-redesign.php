@@ -42,6 +42,12 @@ get_header(); ?>
                     </div>
                 <?php } wp_reset_postdata(); ?>
             </div>
+            <div class="services__buttons">
+                <div class="buttons_wrapper">
+                    <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try it for free', 'realmatch360'); ?></a>
+                    <a class="button" href="?page_id=915" target="_blank"><?php _e('Live Demo?', 'realmatch360'); ?></a>
+                </div>
+            </div>
         </section>
         <!-- Dienstleistungen -->
 
@@ -99,7 +105,13 @@ get_header(); ?>
         </section>
         <!-- Partners -->
 
-
+        <!-- Button -->
+        <div class="services__buttons bottom">
+            <div class="buttons_wrapper">
+                <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try it for free', 'realmatch360'); ?></a>
+            </div>
+        </div>
+        <!-- Button -->
     </div>
     <!-- Container -->
 
