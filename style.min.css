@@ -1106,6 +1106,7 @@ strong,b,.bold{font-family:'LatoBold'}
 .nobackground{background:#26686d;height:auto;margin:10px}
 .whitebackground{background:#fff}
 #wrapper{padding-top:15px}
+.post-not-found>*{padding:0 22px}
 .inbound-label{font-family:'LatoLatinLight'}
 #container input[type="text"],#container textarea{color:#000}
 #header{background:#fff;padding:15px 0 70px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}

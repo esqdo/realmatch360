@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="container">
 <section id="content" role="main" class="grid_12">
-<article id="post-0" class="post not-found">
+<article id="post-0" class="post-not-found">
 <header class="header">
 <h1 class="entry-title"><?php _e( 'Nothing Found', 'realmatch360' ); ?></h1>
 </header>
