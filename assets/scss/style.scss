@@ -18,6 +18,7 @@ $linkcolor: #F29100;
 $hovercolor: #fda04e;
 $yellow: #FFCC00;
 $beige: #e8e7db;
+$darkestblue: rgb(0,105,180);
 
 /* Fonts */
 
@@ -68,31 +69,23 @@ $md-lower-limit: 996px;
 }
 
 
-/*@mixin max-width-landscape($breakpoint) {
+@mixin min-width($breakpoint) {
   @if $breakpoint == xs {
-    @media (max-width: $sm-lower-limit - 1) and (orientation: landscape) {
+    @media (min-width: $xs-lower-limit - 1) {
       @content;
     }
   }
-  @if $breakpoint == sm-x {
-    @media (max-width: $sm-width) and (orientation: landscape) {
+  @if $breakpoint == sm {
+    @media (min-width: $sm-lower-limit - 1) {
       @content;
     }
   }
-  @if $breakpoint == lg {
-    @media (max-width: $lg-lower-limit - 1) and (orientation: landscape) {
+  @if $breakpoint == md {
+    @media (min-width: $md-lower-limit - 1) {
       @content;
     }
   }
 }
-
-@mixin min-width($breakpoint) {
-  @if $breakpoint == sm {
-    @media (min-width: $sm-lower-limit) {
-      @content;
-    }
-  }
-}*/
 
 .clear {
   clear: both;

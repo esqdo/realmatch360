@@ -16,6 +16,13 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
 
+        <nav class="mobile-menu">
+            <ul>
+                <li class="toggle-menu"><a href="#"><i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i></a></li>
+                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+            </ul>
+        </nav>
+
 		<button class="btn btn-green btn-login"><?php _e('Login', 'realmatch360'); ?></button>
 
 		<nav class="language-selector">

@@ -6,8 +6,10 @@ jQuery(document).ready(function($){
       bindEvents();
     }
     });
-    
-       
+
+    $('.toggle-menu').on("click", function(){
+        $(".mobile-menu .menu-main-container").toggleClass("active");
+    });
     
 });
 

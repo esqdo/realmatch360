@@ -5,10 +5,61 @@
     padding:15px 0 70px 0;
     display:flex;
     justify-content: space-between;
+  @include max-width(sm) {
+    flex-direction: column;
+    align-items: center;
+    padding:15px 0 30px 0;
+  }
+  & .mobile-menu {
+    margin-right:auto;
+    & ul {
+      list-style: none;
+      padding-left:15px;
+    }
+    & .toggle-menu a > i {
+      color:$greencolor;
+      font-size: 4rem;
+    }
+    @include min-width(sm) {
+      display:none;
+    }
+    & .menu-main-container {
+      border-top: 1px solid grey;
+      margin-top:15px;
+      visibility: hidden;
+      position: absolute;
+      margin-left:-15px;
+      &.active {
+        visibility: visible;
+        width:456px;
+        @include max-width(xs) {
+            width:300px;
+        }
+        & ul {
+          padding-left: 0;
+          width:100%;
+          box-shadow: 0 4px 2px -2px gray;
+          & li {
+            background: $darkestblue;
+            padding: 15px 15px;
+            &:hover {
+              background: lighten($darkestblue,20);
+            }
+            & a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
   & #menu-main {
     display: flex;
     margin:0;
     list-style: none;
+    @include max-width(sm) {
+      display: none;
+    }
     & li {
       padding:5px;
       border-right: 1px solid $black;
@@ -27,6 +78,13 @@
     padding-right:0px;
     display: flex;
     align-items: center;
+    @include max-width(sm) {
+      margin-top:20px;
+      width:100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
     & button {
       margin:0 10px;
     }
@@ -173,9 +231,6 @@ button.btn-login {
     margin-bottom:20px;
     margin-top: 10px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
 }
 
 .popover-label-content .content {
