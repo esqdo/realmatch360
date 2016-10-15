@@ -34,7 +34,7 @@ get_header(); ?>
                 while ($service->have_posts()) { $service->the_post(); ?>
                     <div class="services__service">
                         <div class="services__imagewrapper">
-                            <?php the_post_thumbnail(); ?>
+                            <a href="?page_id=8490"><?php the_post_thumbnail(); ?></a>
                         </div>
                         <div class="services__content">
                             <?php the_content(); ?>

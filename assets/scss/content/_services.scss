@@ -24,16 +24,16 @@
     flex-direction: column;
     text-align:center;
     & h3 {
-      padding:20px 0;
+      padding:20px 0 0 0;
       color:$white;
-      flex-basis:120px;
+      flex-basis:60px;
       @include max-width(md) {
         flex-basis:auto;
       }
     }
-    & p {
+    & p:first-child {
       margin:0;
-      flex-basis: 100px;
+      flex-basis: 70px;
       @include max-width(md) {
         flex-basis:auto;
       }
@@ -55,7 +55,7 @@
   background: $greencolor;
   display: flex;
   justify-content: space-around;
-  padding:30px 0;
+  padding:10px 0 45px 0;
   & .button {
     margin:0 10px;
   }
