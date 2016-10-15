@@ -1,0 +1,67 @@
+/* Offer Blocks */
+
+
+.offers {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.offerwrp {
+  width:100%;
+  float:left;
+}
+
+
+.widget-blog .offer {
+  width:333px;
+}
+
+.offer {
+  flex-basis: 32%;
+  display:flex;
+  flex-direction: column;
+  color:#26686d;
+  background:#e8e7db;
+  padding:20px;
+  margin-top:10px;
+  & .end {
+    margin:0;
+    margin-top: auto;
+  }
+  & form p {
+    margin:0;
+  }
+}
+
+
+.pricelist {
+  padding:10px 0;
+}
+
+.pricelist:after {
+  font-family: 'Simple-Line-Icons';
+  content: "\e071";
+  font-size: 0.7em;
+  padding:0 10px;
+}
+
+
+.offertext {
+  text-align: center;
+}
+
+.leadsform input {
+  margin:5px 0 5px 0;
+}
+
+.inbound-input-textarea {
+  height:30px;
+}
+
+.offer .watchvideo:before {
+  font-family: 'Simple-Line-Icons';
+  content: "\e071";
+  margin:10px 10px 10px 0;
+}

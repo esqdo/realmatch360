@@ -41,3 +41,10 @@
 @include font-face(geogrotesquesemibold, 'assets/fonts/geogtq-sb-webfont', normal, normal, eot woff ttf svg);
 @include font-face(dosisbold, 'assets/fonts/dosis-bold-webfont', normal, normal, eot woff ttf svg);
 @include font-face(dosisregular, 'assets/fonts/dosis-regular-webfont', normal, normal, eot woff ttf svg);
+
+$latolight: 'LatoLatinLight';
+$latobold: 'LatoBold';
+$latoregular: 'LatoLatin';
+$geogrotesque: 'geogrotesquesemibold';
+$dosisbold: 'dosisbold';
+$dosisregular: 'dosisregular';

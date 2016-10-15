@@ -4,7 +4,12 @@
   text-align: left;
   position: static;
   background-color:$beige;
-  color:#3c7376;
+  color:$greencolor;
+  padding:30px 22px 30px 22px;
+  margin-top: 10px;
+  & a {
+    color:$greencolor;
+  }
   & .footer-widgets {
     display:flex;
     @include max-width(sm) {
@@ -25,8 +30,7 @@
     }
     & .latest-post {
       flex-basis:45%;
-      color:#26686d;
-      background: #e8e7db;
+      color:$greencolor;
       padding:0 15px;
       @include max-width(sm) {
         margin-top: 15px;
@@ -37,7 +41,7 @@
         margin-bottom:10px;
       }
       & h3 a {
-        color: #26686d;
+        color: $greencolor;
         text-decoration:none;
       }
     }
@@ -45,6 +49,9 @@
   & .feedtitle {
     display: flex;
     justify-content: space-between;
+    @include max-width(xs) {
+      flex-direction: column;
+    }
   }
   & .twitterbadge {
     padding-left:15px;
@@ -83,19 +90,6 @@
     & h3 {
       margin-top: 10px;
     }
-  }
-}
-
-
-#footerwrapper {
-  float: left;
-  width:100%;
-  background-color:$beige;
-  color:#3c7376;
-  padding:30px 0 30px 0;
-  margin-top:10px;
-  & a {
-    color:#3c7376;
   }
 }
 

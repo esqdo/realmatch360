@@ -1,8 +1,8 @@
 .customers {
   margin-top:10px;
   text-align: center;
+  background-color: $beige;
   & h2 {
-    background-color: $beige;
     padding: 30px 22px;
   }
   &__wrapper {
@@ -18,7 +18,6 @@
     & a {
       display:block;
       color:$black;
-      background-color:$beige;
       transition: 0.2s all;
       &:hover {
         background-color:darken($beige,15);
@@ -91,7 +90,7 @@
   }
 
   /* Menu */
-  &__menu {
+&__menu {
     margin-top: 10px;
     ul {
       margin:0;
@@ -106,13 +105,8 @@
         text-align: center;
         flex-basis:24%;
         & a {
-          background:$beige;
           padding:10px 0;
           display: block;
-          color:$black;
-          &:hover {
-            background:darken($beige,15);
-          }
         }
       }
     }

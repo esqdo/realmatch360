@@ -30,11 +30,11 @@ get_header(); ?>
             <h2><?php _e('Our Online-Services for You', 'realmatch360'); ?></h2>
             <div class="services__wrapper">
                 <?php
-                $service =  new WP_Query( 'post_type=services' );
+                $service =  new WP_Query( 'post_type=products' );
                 while ($service->have_posts()) { $service->the_post(); ?>
                     <div class="services__service">
                         <div class="services__imagewrapper">
-                            <a href="?page_id=8490"><?php the_post_thumbnail(); ?></a>
+                            <a href="<?php echo get_permalink(icl_object_id(8490,'page',false,ICL_LANGUAGE_CODE));?>"><?php the_post_thumbnail(); ?></a>
                         </div>
                         <div class="services__content">
                             <?php the_content(); ?>
@@ -45,7 +45,7 @@ get_header(); ?>
             <div class="services__buttons">
                 <div class="buttons_wrapper">
                     <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try it for free', 'realmatch360'); ?></a>
-                    <a class="button" href="?page_id=915" target="_blank"><?php _e('Live Demo?', 'realmatch360'); ?></a>
+                    <a class="button" href="<?php echo get_permalink(icl_object_id(915,'page',false,ICL_LANGUAGE_CODE));?>" target="_blank"><?php _e('Live Demo?', 'realmatch360'); ?></a>
                 </div>
             </div>
         </section>
@@ -84,17 +84,8 @@ get_header(); ?>
                 <?php the_field('nachfragedaten'); ?>
             </div>
             <!-- Nachfragedaten -->
-            <!-- Wir sind für Sie Da-->
-            <div class="customers__support-wrapper">
-                <h2><?php _e('We are there for you', 'realmatch360'); ?></h2>
-                <div class="customers__support">
-                    <?php the_field('wir_sind_fur_sie_da'); ?>
-                </div>
-            </div>
-            <!-- Wir sind für Sie Da-->
         </section>
         <!-- Kunden -->
-
 
         <!-- Partners -->
         <section class="partners">
@@ -105,6 +96,17 @@ get_header(); ?>
         </section>
         <!-- Partners -->
 
+        <!-- Wir sind für Sie Da-->
+        <section class="customers">
+            <div class="customers__support-wrapper">
+                <h2><?php _e('We are there for you', 'realmatch360'); ?></h2>
+                <div class="customers__support">
+                    <?php the_field('wir_sind_fur_sie_da'); ?>
+                </div>
+            </div>
+        </section>
+        <!-- Wir sind für Sie Da-->
+
         <!-- Button -->
         <div class="services__buttons bottom">
             <div class="buttons_wrapper">
@@ -112,6 +114,8 @@ get_header(); ?>
             </div>
         </div>
         <!-- Button -->
+
+
     </div>
     <!-- Container -->
 

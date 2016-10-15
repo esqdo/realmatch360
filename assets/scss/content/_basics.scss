@@ -14,9 +14,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   height:100%;
 }
@@ -41,7 +38,7 @@ h2 {
 h3 {
   font-family: 'geogrotesquesemibold', sans-serif;
   font-size: 2rem;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #26686d;    /* plus #FFF */

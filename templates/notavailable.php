@@ -1,7 +1,7 @@
 <?php
 /*
 
-Template Name: Notavailable
+Template Name: Produktpage
 
 */
 
@@ -29,18 +29,17 @@ get_header('empty'); ?>
 </section>
 </section>
 
-        <section class="container">
-                                     <?php
-            $offer =  new WP_Query( 'post_type=offers' );
-            while ($offer->have_posts()) {
-                    $offer->the_post();
-                    ?>
-                <?php the_content(); ?>
-            <?php
-        }
-        ?>
-            <?php wp_reset_postdata(); ?>
-        </section>
-<div style="clear: both; display: block;"></div>
+<!-- Offers -->
+<section class="container offers__wrapper">
+                             <?php
+    $offer =  new WP_Query( 'post_type=offers' );
+    while ($offer->have_posts()) {
+            $offer->the_post();
+            ?>
+        <?php the_content(); ?>
+    <?php
+} wp_reset_postdata(); ?>
+</section>
+<!-- Offers -->
 
 <?php get_footer('empty'); ?>

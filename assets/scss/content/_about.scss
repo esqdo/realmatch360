@@ -1,0 +1,55 @@
+.employees {
+  &__contact {
+    display: flex;
+    @include max-width(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+    & p {
+      padding:0 22px;
+    }
+  }
+  &__member-wrapper {
+    padding:0 22px;
+    display: flex;
+    justify-content: space-between;
+    @include max-width(sm) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__member {
+    flex-basis: 24%;
+    @include max-width(sm) {
+      width:100%;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      & i {
+        margin:10px 10px 10px 0;
+      }
+      & img {
+        width:100%;
+      }
+      & > p{
+        & i {
+          margin-right:5px;
+        }
+      }
+
+      & h3 {
+        padding:10px 0;
+        color: #ffffff;
+      }
+    }
+  }
+  &__job {
+    font-family:$latobold;
+  }
+  &__team-content {
+    & p {
+      margin:5px 0;
+    }
+  }
+}

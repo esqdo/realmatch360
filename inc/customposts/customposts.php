@@ -34,17 +34,16 @@ function create_post_type() {
 	);
 
 	/* Service Post-Type */
-	register_post_type( 'services',
+	register_post_type( 'products',
 		array(
 			'labels' => array(
-				'name' => __( 'Services' ),
-				'singular_name' => __( 'Service' )
+				'name' => __( 'Products' ),
+				'singular_name' => __( 'Products' )
 			),
 			'public' => true,
 			'has_archive' => false,
 			'supports' => array( 'title','editor','revisions', 'thumbnail' ),
 		)
 	);
-
 }
 ?>
