@@ -1,7 +1,8 @@
 .customers {
-  margin-top:10px;
+  margin-top:15px;
   text-align: center;
   background-color: $beige;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   & h2 {
     padding: 30px 22px;
   }

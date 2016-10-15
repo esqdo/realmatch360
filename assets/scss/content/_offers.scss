@@ -5,6 +5,9 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @include max-width(sm) {
+      flex-direction: column;
+    }
   }
 }
 
