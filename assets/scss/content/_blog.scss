@@ -1,0 +1,41 @@
+.blog {
+  & article {
+    height:auto;
+  }
+  &__wrapper {
+    display: flex;
+    & #blogcontent {
+      padding: 0 22px;
+      @include max-width(sm) {
+        width:100%;
+      }
+    }
+  }
+  & #sidebar {
+    padding:20px;
+    background: #e8e7db;
+  }
+}
+
+#comments-list ul {
+  list-style: none;
+}
+
+.sidebar {
+  flex-basis: 50%;
+  & ul {
+    list-style: none;
+  }
+}
+
+.xoxo {
+  list-style: none;
+  padding-left:0;
+  & ul {
+    padding-left:10px;
+  }
+}
+
+.sidebar li {
+  margin:10px 0;
+}
