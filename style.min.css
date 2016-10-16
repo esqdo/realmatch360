@@ -1184,7 +1184,7 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 .popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";border-right-width:0;border-left-color:#fff}
 .popover.left>.arrow{top:50%;right:-11px}
 #footer{text-align:left;position:static;background-color:#e8e7db;color:#26686d;padding:30px 22px 30px 22px;margin-top:10px;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-#footer a{color:#26686d}
+#footer #footer-column1 a,#footer .social-media a{color:#26686d}
 #footer .footer-widgets{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
 #footer .footer-widgets>*{border-right:1px solid grey}
 #footer .footer-widgets div:last-child{border:0}
@@ -1195,11 +1195,13 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 #footer .twitterbadge{padding-left:15px}
 #footer .twittermeta{font-size:.667em;font-family:'LatoBold'}
 #footer .tweetcontent,#footer .e-entry-title,#footer #twitter-widget-0{color:#26686d}
+#footer #footer-column2{border-top:1px solid #1c1c1c;margin-top:10px;padding-top:10px}
 #footernav{padding-right:15px}
-#footernav ul{margin-top:10px;padding-left:15px;list-style:disc}
+#footernav ul{margin-top:10px;padding-left:0;list-style:none}
 #footernav ul li{padding:5px}
 #footernav ul li:hover a{text-decoration:none;color:#f29100}
-.social-media{font-size:3rem;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.readmore{text-align:right;margin-right:20px;text-decoration:underline}
+.social-media{font-size:3rem;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 .social-media a{font-size:4rem}
 .social-media li{text-align:center;list-style:none}
 .social-media li:hover a i{cursor:pointer;color:#f29100}
@@ -1223,9 +1225,9 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 .featured__testimonial{background-color:#26686d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .featured__logo-wrapper{padding:0 22px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .featured__logo-wrapper a{padding:0 10px;-webkit-flex-basis:18%;-ms-flex-preferred-size:18%;flex-basis:18%}
-.testimonial__image{padding:50px 0;-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%}
+.testimonial__image{padding:50px 15px;-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%}
 .testimonial__image img{border-radius:100%}
-.testimonial__text{-webkit-flex-basis:55%;-ms-flex-preferred-size:55%;flex-basis:55%;color:#FFF}
+.testimonial__text{-webkit-flex-basis:66%;-ms-flex-preferred-size:66%;flex-basis:66%;color:#FFF}
 .testimonial__text h4{color:#FFF}
 .testimonial__text p{font-size:1.8rem}
 .customerwrp{margin-top:10px;background:#e8e7dc;padding:0 0 10px 0;color:#26686d;width:100%}
@@ -1328,7 +1330,6 @@ h2.page-title span,.usewrp span{font-family:'dosisregular'}
 .tptn_link{margin:5px 0}
 .tptn_title{font-family:'LatoLatinLight'}
 .tptn_related li{list-style-type:disc;font-family:'LatoLight';height:40px}
-.readmore{color:blue;text-align:right;margin-right:20px;text-decoration:underline}
 .not-found{padding-bottom:20px}
 #searchform input{padding:10px 5px;border:0;width:220px;margin-top:5px;display:inline}
 #searchsubmit{color:#FFF;padding:10px 15px 10px 15px;background:#f29305;background-image:-webkit-linear-gradient(90deg,#de7300 0,#f29305 100%);background-image:-ms-linear-gradient(90deg,#de7300 0,#f29305 100%);font-family:'LatoLatin';border:0}
@@ -1551,8 +1552,6 @@ img.fb{width:100%;border:1px #f00 solid}
 .featuredslidenav{width:290px;left:54%}
 .quote{padding:10px;width:220px;height:160px}
 #fl3{width:520px;height:300px}
-.mapimg{display:block;background:url(https://www.realmatch360.com/app/static/img/map.png) repeat scroll 0 0 transparent;position:relative;padding:0;width:650px;height:439px;margin-left:39px}
-#map canvas{width:652px;height:439px;position:absolute;left:0;top:0;padding:0;border:0 none}
 .contentblock .grid_8{width:100%}
 #leftcontent{padding-top:20px;clear:both}
 .registerinput{width:115px}
@@ -1651,6 +1650,7 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 #footer .twitterbadge{padding:0 0 10px 0}
 #footer .twitterbadge .feedtitle{border-top:1px solid grey;padding:10px 0 0 0}
 #footernav h3{margin-top:10px}
+.social-media{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .stretch{height:auto}
 .featured__questions-wrapper{padding:0 11px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .featured__questions-wrapper .question h3{height:auto;margin-bottom:10px}

@@ -8,7 +8,7 @@
   padding:30px 22px 30px 22px;
   margin-top: 10px;
   @include shadow;
-  & a {
+  & #footer-column1 a, & .social-media a {
     color:$greencolor;
   }
   & .footer-widgets {
@@ -71,14 +71,19 @@
   & .tweetcontent, .e-entry-title, & #twitter-widget-0 {
     color:#26686d;
   }
+  & #footer-column2 {
+    border-top:1px solid $black;
+    margin-top:10px;
+    padding-top: 10px;
+  }
 }
 
 #footernav {
   padding-right:15px;
   & ul {
     margin-top:10px;
-    padding-left:15px;
-    list-style: disc;
+    padding-left:0;
+    list-style: none;
     & li {
       padding:5px;
       &:hover a {
@@ -94,11 +99,20 @@
   }
 }
 
+.readmore {
+  text-align:right;
+  margin-right:20px;
+  text-decoration:underline;
+}
 
 .social-media {
   font-size:3rem;
   margin:0;
   display: flex;
+  justify-content: space-between;
+  @include max-width(sm) {
+    justify-content: flex-start;
+  }
   & a {
     font-size:4rem;
   }

@@ -32,6 +32,11 @@
                 <a class="" href="<?php echo get_permalink(icl_object_id(65,'page',false,ICL_LANGUAGE_CODE));?>"><?php _e('More Articles', 'realmatch360'); ?></a>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
+            <?php if ( is_active_sidebar( 'footer-column2-widget-area' ) ) : ?>
+                <div id="footer-column2" class="widget-area">
+                    <?php dynamic_sidebar( 'footer-column2-widget-area' ); ?>
+                </div>
+            <?php endif; ?>
         </div>
         <!-- Twitter Feed -->
         <div class="twitterbadge">
