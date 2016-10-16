@@ -1423,8 +1423,8 @@ img.fb{width:100%;border:1px #f00 solid}
 .customers__data{margin-top:10px;background-color:#e8e7db;padding:22px}
 .customers__support-wrapper{margin-top:10px;background-color:#e8e7db}
 .customers__support{margin:0 auto;padding:30px 0;width:70%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
-.customers__support div{-webkit-flex-basis:20%;-ms-flex-preferred-size:20%;flex-basis:20%}
-.customers__support i{font-size:10rem;line-height:150px;color:#FFF;width:150px;height:150px;background:#26686d;border-radius:100%}
+.customers__support div{-webkit-flex-basis:30%;-ms-flex-preferred-size:30%;flex-basis:30%}
+.customers__support i{font-size:9rem;line-height:130px;color:#FFF;width:130px;height:130px;background:#26686d;border-radius:100%}
 .customers__support h4{height:110px;padding:30px 0}
 .customers__menu{margin-top:10px}
 .customers__menu ul{margin:0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;list-style:none;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
