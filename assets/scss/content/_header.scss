@@ -64,11 +64,12 @@
       display: none;
     }
     & li {
-      padding:5px;
+      margin:5px 0;
+      padding:0 5px;
       border-right: 1px solid $black;
       & a {
         font-size:1.6rem;
-        font-family: 'LatoBold';
+        font-family: $latoregular;
         color: $greencolor;
       }
     }
@@ -89,7 +90,8 @@
       justify-content: flex-end;
     }
     & button {
-      margin:0 10px;
+      margin-right:10px;
+      margin-left:5px;
     }
   }
   /* Language Selector */
@@ -99,7 +101,7 @@
     position:relative;
     z-index:100;
     margin-right: 10px;
-    font-family:'geogrotesquesemibold';
+    font-family:$latoregular;
   }
 
   /* remove all the bullets, borders and padding from the default list styling */
@@ -110,29 +112,31 @@
 
   /* style the links for the top level */
   & #lang_sel a, #lang_sel a:link, #lang_sel a:visited {
+    font-size: 1.6rem;
     display:block;
     margin-top:3px;
     text-decoration:none !important;
-    color:#095b60;
+    color:$greencolor;
     border:1px solid #EFEFEF;
     line-height:32px;
     padding: 5px 10px;
     border-radius: 5px; /* future proofing */
     height: 42px;
   }
+
   /* hide the sub levels and give them a positon absolute so that they take up no room */
-  & #lang_sel ul ul {position:absolute;height:0;top:40px;left:0; width:70px;border-top:0;}
+  & #lang_sel ul ul {position:absolute;height:0;top:42px;left:0; width:70px;border-top:0;}
 
   /* style the second level links */
   & #lang_sel ul ul a, #lang_sel ul ul a:link, #lang_sel ul ul a:visited {
     font-weight: normal;
-    /*font-size: 11px;*/
+    font-size: 1.6rem;
     background:#FFF;
-    color:#000 !important;
+    color:$greencolor !important;
     border-width:0px 1px 1px 1px;
     border-radius: 0;
     margin-top:0;
-    line-height:42px;
+    line-height:32px;
     height:42px;
   }
   /* style the top level hover */
@@ -144,16 +148,21 @@ article .page {
     background:$greencolor;
 }
 
+.btn {
+  font-weight: 300;
+}
 button.btn-login {
-  font-size:1.4rem;
-    color:#26686d;
+    font-size:1.6rem;
     text-decoration:none;
-    text-transform:uppercase;
-    font-family:'dosisregular', sans-serif;
+    text-transform:none !important;
+    font-family:$latoregular;
+    height:42px;
+    padding:0 10px;
 }
 
-.btn-login:hover, #consultation_appointment-button:hover, .btn-home:hover {
+.btn-login:hover, #consultation_appointment-button:hover {
     color:#121314;
+  background-color:lighten($greencolor,20);
 }
 
 .close-button:hover {
@@ -162,7 +171,10 @@ button.btn-login {
 }
 
 .popover-title {
-    background:#26686d;
+  font-family: $latoregular !important;
+  background:#26686d;
+  text-transform: none !important;
+  font-size: 1.6rem;
 }
 
 .popover-content {
@@ -171,6 +183,7 @@ button.btn-login {
 }
 
 .form-login input {
+    font-size:1.6rem;
     border:1px solid #CCC;
     color:#999;
     margin:5px 0;
@@ -189,8 +202,10 @@ button.btn-login {
     border:1px solid #CCC;
     width:100%;
     color:#000;
-    font-size: 0.9em;
     margin:10px 0;
+    font-family: $latoregular !important;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 
 .login-dialog .hide {
@@ -199,7 +214,7 @@ button.btn-login {
 
 .login-dialog {
     color:#000;
-    font-size: 0.9em;
+    font-size: 1.6rem;
 }
 
 .login-dialog a {

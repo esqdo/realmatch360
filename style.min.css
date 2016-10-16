@@ -1121,30 +1121,31 @@ strong,b,.bold{font-family:'LatoBold'}
 #header .mobile-menu .menu-main-container.active ul li:hover{background:#40b0b9}
 #header .mobile-menu .menu-main-container.active ul li a{color:#fff}
 #header #menu-main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0;list-style:none}
-#header #menu-main li{padding:5px;border-right:1px solid #1c1c1c}
-#header #menu-main li a{font-size:1.6rem;font-family:'LatoBold';color:#26686d}
+#header #menu-main li{margin:5px 0;padding:0 5px;border-right:1px solid #1c1c1c}
+#header #menu-main li a{font-size:1.6rem;font-family:"LatoLatin";color:#26686d}
 #header #menu-main li:last-child{border-right:0}
 #header #pageNavigationTop{padding-right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-#header #pageNavigationTop button{margin:0 10px}
-#header #lang_sel{height:42px;display:inline-block;position:relative;z-index:100;margin-right:10px;font-family:'geogrotesquesemibold'}
+#header #pageNavigationTop button{margin-right:10px;margin-left:5px}
+#header #lang_sel{height:42px;display:inline-block;position:relative;z-index:100;margin-right:10px;font-family:"LatoLatin"}
 #header #lang_sel ul ul{width:70px}
 #header #lang_sel li{float:left;width:70px;position:relative}
-#header #lang_sel a,#header #lang_sel a:link,#header #lang_sel a:visited{display:block;margin-top:3px;text-decoration:none !important;color:#095b60;border:1px solid #efefef;line-height:32px;padding:5px 10px;border-radius:5px;height:42px}
-#header #lang_sel ul ul{position:absolute;height:0;top:40px;left:0;width:70px;border-top:0}
-#header #lang_sel ul ul a,#header #lang_sel ul ul a:link,#header #lang_sel ul ul a:visited{font-weight:normal;background:#FFF;color:#000 !important;border-width:0 1px 1px 1px;border-radius:0;margin-top:0;line-height:42px;height:42px}
+#header #lang_sel a,#header #lang_sel a:link,#header #lang_sel a:visited{font-size:1.6rem;display:block;margin-top:3px;text-decoration:none !important;color:#26686d;border:1px solid #efefef;line-height:32px;padding:5px 10px;border-radius:5px;height:42px}
+#header #lang_sel ul ul{position:absolute;height:0;top:42px;left:0;width:70px;border-top:0}
+#header #lang_sel ul ul a,#header #lang_sel ul ul a:link,#header #lang_sel ul ul a:visited{font-weight:normal;font-size:1.6rem;background:#FFF;color:#26686d !important;border-width:0 1px 1px 1px;border-radius:0;margin-top:0;line-height:32px;height:42px}
 #header #lang_sel a:hover,#header #lang_sel ul ul a:hover{color:#000}
 #header #lang_sel :hover>a,#header #lang_sel ul ul :hover>a{color:#000}
 article .page{background:#26686d}
-button.btn-login{font-size:1.4rem;color:#26686d;text-decoration:none;text-transform:uppercase;font-family:'dosisregular',sans-serif}
-.btn-login:hover,#consultation_appointment-button:hover,.btn-home:hover{color:#121314}
+.btn{font-weight:300}
+button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !important;font-family:"LatoLatin";height:42px;padding:0 10px}
+.btn-login:hover,#consultation_appointment-button:hover{color:#121314;background-color:#40b0b9}
 .close-button:hover{cursor:pointer;color:#CCC}
-.popover-title{background:#26686d}
+.popover-title{font-family:"LatoLatin" !important;background:#26686d;text-transform:none !important;font-size:1.6rem}
 .popover-content{padding-left:20px;padding-right:20px}
-.form-login input{border:1px solid #CCC;color:#999;margin:5px 0;padding:5px}
+.form-login input{font-size:1.6rem;border:1px solid #CCC;color:#999;margin:5px 0;padding:5px}
 .form-login input:hover,.form-login input:focus{color:#000;border-color:#9ecaed;box-shadow:0 0 5px #9ecaed}
-.form-login button{text-align:center;padding:5px;border:1px solid #CCC;width:100%;color:#000;font-size:.9em;margin:10px 0}
+.form-login button{text-align:center;padding:5px;border:1px solid #CCC;width:100%;color:#000;margin:10px 0;font-family:"LatoLatin" !important;font-size:1.6rem;font-weight:300}
 .login-dialog .hide{display:none}
-.login-dialog{color:#000;font-size:.9em}
+.login-dialog{color:#000;font-size:1.6rem}
 .login-dialog a{display:block;padding:5px 0;color:#095b60;text-decoration:underline}
 .has-error .form-control{border-color:#b94a48;box-shadow:0 1px 1px rgba(0,0,0,0.075) inset}
 .form-control{width:95%;margin-right:10px;vertical-align:middle}
