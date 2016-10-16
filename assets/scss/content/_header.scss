@@ -67,10 +67,17 @@
       margin:5px 0;
       padding:0 5px;
       border-right: 1px solid $black;
+      &.current-menu-item a {
+        color: $black;
+        text-decoration: underline;
+      }
       & a {
         font-size:1.6rem;
-        font-family: $latoregular;
+        font-family: $latobold;
         color: $greencolor;
+        &:hover {
+          color:lighten($greencolor,20);
+        }
       }
     }
     & li:last-child {
@@ -101,7 +108,7 @@
     position:relative;
     z-index:100;
     margin-right: 10px;
-    font-family:$latoregular;
+    font-family:$latobold;
   }
 
   /* remove all the bullets, borders and padding from the default list styling */
@@ -155,7 +162,7 @@ button.btn-login {
     font-size:1.6rem;
     text-decoration:none;
     text-transform:none !important;
-    font-family:$latoregular;
+    font-family:$latobold;
     height:42px;
     padding:0 10px;
 }
@@ -171,10 +178,10 @@ button.btn-login {
 }
 
 .popover-title {
-  font-family: $latoregular !important;
+  font-family: $latobold !important;
   background:#26686d;
   text-transform: none !important;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 .popover-content {
@@ -203,7 +210,7 @@ button.btn-login {
     width:100%;
     color:#000;
     margin:10px 0;
-    font-family: $latoregular !important;
+    font-family: $latobold !important;
     font-size: 1.6rem;
     font-weight: 300;
 }
@@ -254,7 +261,7 @@ button.btn-login {
 .popover-label-content .content {
     background: none;
     width:100%;
-    font-family: 'LatoLatinLight';
+    font-family: $latolight;
     font-size:1.2em;
     padding-bottom: 10px;
 }
@@ -263,7 +270,7 @@ button.btn-login {
     padding:10px 0;
     float:left;
     width:100%;
-    font-size:1.2em;
+    font-size:1.6rem;
 }
 
 .popover-label-button button {
