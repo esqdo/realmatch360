@@ -9,7 +9,7 @@
  */
 
 var project              = 'Realmatch360';
-var projectURL           = 'realmatch360.dev'; // Project URL. Could be something like localhost:8888.
+var projectURL           = 'localhost:8888'; // Project URL. Could be something like localhost:8888.
 var productURL           = './';
 
 var styleSRC             = './assets/scss/style.scss';
