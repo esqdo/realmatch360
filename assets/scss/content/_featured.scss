@@ -104,9 +104,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include max-width(sm) {
+      flex-direction: column;
+    }
     & a {
       padding:0 10px;
       flex-basis: 18%;
+      @include max-width(sm) {
+        width:80%;
+        & img {
+          width:100%;
+        }
+      }
+      @include max-width(xs) {
+        width:100%;
+      }
     }
   }
 }

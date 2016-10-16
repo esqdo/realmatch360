@@ -1650,6 +1650,9 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 .featured__questions-wrapper{padding:0 11px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .featured__questions-wrapper .question h3{height:auto;margin-bottom:10px}
 .featured__testimonial{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 22px}
+.featured__logo-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.featured__logo-wrapper a{width:80%}
+.featured__logo-wrapper a img{width:100%}
 .testimonial__image img{display:block;margin:0 auto;width:60%}
 #featuredsubnav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 #featuredsubnav ul li a{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
@@ -1691,6 +1694,7 @@ h1.page-title{margin:5px}
 .contentblock h2{color:#FFF;word-spacing:normal}
 }@media(max-width:479px){#header .mobile-menu .menu-main-container.active{width:300px}
 #footer .feedtitle{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.featured__logo-wrapper a{width:100%}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
 }@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
