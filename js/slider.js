@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
     }
     });
 
-    $('.toggle-menu').on("click", function(){
+    $('.toggle-menu').on("click touchstart", function(){
         $(".mobile-menu .menu-main-container").toggleClass("active");
     });
     
