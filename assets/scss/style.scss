@@ -20,98 +20,103 @@ $yellow: #FFCC00;
 $beige: #e8e7db;
 $darkestblue: rgb(0,105,180);
 
-/* Fonts */
-
-$headerfont: 'geogrotesquesemibold';
-$lightfont: 'LatoLatinLight';
-$regularfont: 'LatoLatin';
-
-/* Basics */
-
-html {
-  font-family: $lightfont, sans-serif;
-  box-sizing: border-box;
-  font-size:10px;
+@mixin shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-body {
-  font-size:1.6rem;
-}
-button {
-  background:none;
-  border:0;
-  font-size:0.778em;
-  padding:10px 8px 10px 8px;
-}
+  /* Fonts */
 
-$xs-lower-limit: 480px;
-$sm-lower-limit: 768px;
-$md-lower-limit: 996px;
+  $headerfont: 'geogrotesquesemibold';
+  $lightfont: 'LatoLatinLight';
+  $regularfont: 'LatoLatin';
+
+  /* Basics */
+
+  html {
+    font-family: $lightfont, sans-serif;
+    box-sizing: border-box;
+    font-size:10px;
+  }
+
+  body {
+    font-size:1.6rem;
+  }
+  button {
+    background:none;
+    border:0;
+    font-size:0.778em;
+    padding:10px 8px 10px 8px;
+  }
+
+  $xs-lower-limit: 480px;
+  $sm-lower-limit: 768px;
+  $md-lower-limit: 996px;
 
 
-// breakpoint mixins
-@mixin max-width($breakpoint) {
-  @if $breakpoint == xs {
-    @media (max-width: $xs-lower-limit - 1) {
-      @content;
+  // breakpoint mixins
+  @mixin max-width($breakpoint) {
+    @if $breakpoint == xs {
+      @media (max-width: $xs-lower-limit - 1) {
+        @content;
+      }
+    }
+    @if $breakpoint == sm {
+      @media (max-width: $sm-lower-limit - 1) {
+        @content;
+      }
+    }
+    @if $breakpoint == md {
+      @media (max-width: $md-lower-limit - 1) {
+        @content;
+      }
     }
   }
-  @if $breakpoint == sm {
-    @media (max-width: $sm-lower-limit - 1) {
-      @content;
+
+
+  @mixin min-width($breakpoint) {
+    @if $breakpoint == xs {
+      @media (min-width: $xs-lower-limit - 1) {
+        @content;
+      }
+    }
+    @if $breakpoint == sm {
+      @media (min-width: $sm-lower-limit - 1) {
+        @content;
+      }
+    }
+    @if $breakpoint == md {
+      @media (min-width: $md-lower-limit - 1) {
+        @content;
+      }
     }
   }
-  @if $breakpoint == md {
-    @media (max-width: $md-lower-limit - 1) {
-      @content;
-    }
+
+  .clear {
+    clear: both;
   }
-}
-
-
-@mixin min-width($breakpoint) {
-  @if $breakpoint == xs {
-    @media (min-width: $xs-lower-limit - 1) {
-      @content;
-    }
-  }
-  @if $breakpoint == sm {
-    @media (min-width: $sm-lower-limit - 1) {
-      @content;
-    }
-  }
-  @if $breakpoint == md {
-    @media (min-width: $md-lower-limit - 1) {
-      @content;
-    }
-  }
-}
-
-.clear {
-  clear: both;
-}
 
 
 
-/* Normalize */
+  /* Normalize */
 
-@import 'normalize';
+  @import 'normalize';
 
-@import 'grid';
+  @import 'grid';
 
-/* Immport Fonts */
-@import 'fonts';
+  /* Immport Fonts */
+  @import 'fonts';
 
-/* Icons */
-@import 'simple-line-icons';
-@import 'font-awesome';
+  /* Icons */
+  @import 'simple-line-icons';
+  @import 'font-awesome';
 
-/* Featherlight */
+  /* Featherlight */
 
-@import 'featherlight';
+  @import 'featherlight';
 
-/* Core min css */
-@import 'core.min';
+  /* Core min css */
+  @import 'core.min';
 
-/* Content Styles */
-@import 'content/content';
+  /* Content Styles */
+  @import 'content/content';
+

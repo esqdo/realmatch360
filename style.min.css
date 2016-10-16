@@ -1392,7 +1392,7 @@ img.fb{width:100%;border:1px #f00 solid}
 #facebook .b2c.text{color:#933383;background:#fff;height:140px;padding:20px}
 #facebook .b2c.text a,#facebook .b2c.text a:visited{color:#fff}
 .gobutton{height:37px;text-align:center;background-color:rgba(147,51,131,0.9);color:white;width:95%;border:0;border:0;margin-left:5px;font-size:14px;font-weight:900;text-transform:uppercase;margin-top:0;cursor:pointer;display:block;line-height:37px}
-.homeintro{background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:30px 22px}
+.homeintro{background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:30px 22px;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 .homeintro__content h1{margin:10px 0}
 .homeintro__content ul{padding-left:5px;list-style:none}
 .homeintro__content ul>li:before{content:'- '}
@@ -1410,7 +1410,7 @@ img.fb{width:100%;border:1px #f00 solid}
 .services__imagewrapper{height:205px}
 .services__buttons{background:#26686d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;padding:10px 0 45px 0}
 .services__buttons .button{margin:0 10px}
-.services__buttons.bottom{margin-top:10px}
+.services__buttons.bottom{margin-top:10px;padding:20px 0 20px 0;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 .customers{margin-top:15px;text-align:center;background-color:#e8e7db;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 .customers h2{padding:30px 22px}
 .customers__wrapper{margin-top:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
@@ -1554,7 +1554,6 @@ img.fb{width:100%;border:1px #f00 solid}
 .registerbutton{width:auto}
 .offerheight{height:150px}
 .employee{height:200px}
-.latest-post,.twitterbadge{width:339px;height:390px}
 .contentblock h2 span{margin-right:0}
 .featuredsinglenav a{width:240px}
 }@media(min-width:768px){.popover-subscription{width:500px}
@@ -1609,8 +1608,6 @@ div.inline-box{width:auto !important}
 #blogwidget{margin-top:-20px}
 .widget-blog .offer{width:416px}
 .offer{width:100%}
-.latest-post,.twitterbadge,.offer{width:416px;height:auto}
-.latest-post h3,.twitterbadge h3{height:auto}
 #site-description{text-align:center}
 #fl3{width:430px;height:240px}
 .employee img,.employeeoverview img,.employeeregion,.employeeteam img,.employeedesc{width:90%;padding:0 5%}

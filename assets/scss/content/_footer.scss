@@ -7,7 +7,7 @@
   color:$greencolor;
   padding:30px 22px 30px 22px;
   margin-top: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  @include shadow;
   & a {
     color:$greencolor;
   }
