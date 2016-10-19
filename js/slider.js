@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
     });
 
     $('.toggle-menu').on("click", function(){
-        $(".mobile-menu .menu-main-container").toggleClass("active");
+        $(".mobile-menu > ul > div").toggleClass("active");
     });
     
 });
