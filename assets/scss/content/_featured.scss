@@ -127,8 +127,12 @@
   &__image {
     padding:50px 15px;
     flex-basis:25%;
+    @include max-width(sm) {
+      padding: 20px 15px;
+    }
     & img {
       border-radius: 100%;
+      padding:0;
       @include max-width(sm) {
         display: block;
         margin: 0 auto;
