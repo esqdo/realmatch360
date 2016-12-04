@@ -101,7 +101,7 @@
     @include max-width(sm) {
       display: block;
       flex-direction: column;
-      padding:0 22px;
+      padding:0 22px 10px 22px;
     }
   }
   &__logo-wrapper {

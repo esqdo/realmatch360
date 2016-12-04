@@ -45,8 +45,9 @@
       margin:0;
     }
     & img {
+      filter: invert(.2) sepia(1);
       width:90%;
-      margin:5px 0;
+      margin:10px 0;
       @include max-width(sm) {
         width:60%;
       }
