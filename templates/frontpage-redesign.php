@@ -54,7 +54,22 @@ get_header(); ?>
         <!-- Kunden -->
         <section class="customers">
             <h2><?php _e('Over 100 Customers trust Realmatch360', 'realmatch360'); ?></h2>
-            <div class="customers__menu">
+
+            <div class="customers__wrapper">
+                <?php $args = array( 'post_type' => 'featured' );
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <div class="customers__column">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <div class="customers__images">
+                        <?php the_field('featured_logos'); ?>
+                    </div>
+                </div>
+
+                <?php endwhile;wp_reset_postdata(); ?>
+             </div>
+
+            <!-- <div class="customers__menu">
                 <?php wp_nav_menu( array( 'theme_location' => 'featured-menu' ) ); ?>
             </div>
             <div class="customers__wrapper">
@@ -78,7 +93,7 @@ get_header(); ?>
                         <?php the_field('bewerter_logos'); ?>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Nachfragedaten -->
             <div class="customers__data">
                 <?php the_field('nachfragedaten'); ?>

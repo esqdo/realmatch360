@@ -7,6 +7,7 @@
     padding: 30px 22px;
   }
   &__wrapper {
+    padding:0 22px;
     margin-top:10px;
     display:flex;
     justify-content: space-between;
@@ -16,6 +17,13 @@
   }
   &__column {
     flex-basis:24%;
+    & > a {
+      @include button-beige;
+      padding:10px 0;
+      &:hover {
+        @include button-beige-hover;
+      }
+    }
     & a {
       display:block;
       color:$black;
@@ -102,7 +110,9 @@
         text-align: center;
         flex-basis:24%;
         & a {
-          padding:10px 0;
+          color:$black;
+          @include button-beige;
+
           display: block;
         }
       }
