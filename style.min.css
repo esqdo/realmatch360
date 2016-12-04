@@ -1117,9 +1117,9 @@ strong,b,.bold{font-family:'LatoBold'}
 #header .mobile-menu>ul>div{border-top:1px solid grey;margin-top:15px;visibility:hidden;position:absolute;margin-left:-15px}
 #header .mobile-menu>ul>div.active{visibility:visible;width:456px}
 #header .mobile-menu>ul>div.active ul{padding-left:0;width:100%;box-shadow:0 4px 2px -2px gray}
-#header .mobile-menu>ul>div.active ul li{background:#26686d;padding:15px 15px}
+#header .mobile-menu>ul>div.active ul li{background:#26686d}
 #header .mobile-menu>ul>div.active ul li:hover{background:#40b0b9}
-#header .mobile-menu>ul>div.active ul li a{color:#fff}
+#header .mobile-menu>ul>div.active ul li a{display:block;padding:15px 15px;color:#fff}
 #header .main-menu>div>ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0;list-style:none}
 #header .main-menu>div>ul li{margin:5px 0;padding:0 5px;border-right:1px solid #1c1c1c}
 #header .main-menu>div>ul li.current-menu-item a{color:#1c1c1c;text-decoration:underline}
