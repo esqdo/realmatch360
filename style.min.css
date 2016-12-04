@@ -1394,7 +1394,6 @@ img.fb{width:100%;border:1px #f00 solid}
 .services__content{color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center}
 .services__content h3{padding:20px 0 0 0;color:#fff;-webkit-flex-basis:60px;-ms-flex-preferred-size:60px;flex-basis:60px}
 .services__content p:first-child{margin:0;-webkit-flex-basis:70px;-ms-flex-preferred-size:70px;flex-basis:70px}
-.services__imagewrapper{height:205px}
 .services__buttons{background:#26686d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;padding:10px 0 45px 0}
 .services__buttons .button{margin:0 10px}
 .services__buttons.bottom{margin-top:10px;padding:20px 0 20px 0;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}

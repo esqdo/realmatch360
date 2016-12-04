@@ -42,7 +42,6 @@
     }
   }
   &__imagewrapper {
-    height:205px;
     @include max-width(md) {
       height:auto;
       & img {
