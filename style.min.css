@@ -1098,7 +1098,7 @@ ul{font-size:1.6rem}
 a{font-size:1.6rem;color:#f29100;text-decoration:none}
 a:link{color:#f29100;text-decoration:none}
 a:visited{color:#f29100}
-a:hover,a:focus{color:#fda04e}
+a:hover,a:focus{color:#fda04e;text-decoration:underline}
 #content{padding:20px 0}
 #content article{padding:22px 0}
 #blogcontent{background:#26686d}
@@ -1187,7 +1187,7 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 #footer #footer-column1 a,#footer .social-media a{color:#fff}
 #footernav ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:10px;padding-left:0;list-style:none}
 #footernav ul li{padding:5px}
-#footernav ul li:hover a{text-decoration:none;color:#f29100}
+#footernav ul li:hover a{color:#f29100}
 .social-media{margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .social-media a{color:#fff;font-size:5rem;padding:0 10px}
 .social-media li{text-align:center;list-style:none}
