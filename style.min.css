@@ -1164,8 +1164,8 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 .tooltip.top{padding:5px 0;margin-top:-3px;background:#000;color:#FFF;width:200px;padding:5px}
 .row{margin-right:-15px;margin-left:-15px}
 .form-group{margin-bottom:15px}
-header .header-image{width:100%}
-header .header-image img{display:block;margin:0 auto}
+header .header-image{width:60%;margin:0 auto}
+header .header-image img{width:100%}
 .popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;text-align:left;white-space:normal;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);border-radius:6px;box-shadow:0 5px 10px rgba(0,0,0,0.2)}
 .popover.top{margin-top:-10px}
 .popover.right{margin-left:10px}
