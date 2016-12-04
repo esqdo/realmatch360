@@ -3173,7 +3173,7 @@ img.fb  { width: 100%; border: 1px #ff0000 solid; }
 
 .services__content { color: #FFFFFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; text-align: center; }
 
-.services__content h3 { padding: 20px 0 0 0; color: #FFFFFF; -webkit-flex-basis: 60px; -ms-flex-preferred-size: 60px; flex-basis: 60px; }
+.services__content h3 { padding: 20px 0 0 0; color: #FFFFFF; -webkit-flex-basis: 80px; -ms-flex-preferred-size: 80px; flex-basis: 80px; }
 
 @media (max-width: 995px) { .services__content h3 { -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; } }
 
