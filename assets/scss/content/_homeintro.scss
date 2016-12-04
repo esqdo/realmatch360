@@ -6,6 +6,7 @@
   background: $yellow;
   display:flex;
   padding:30px 22px;
+  justify-content: space-between;
   @include shadow;
   @include max-width(sm) {
     flex-direction: column;
