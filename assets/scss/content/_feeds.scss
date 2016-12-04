@@ -1,0 +1,67 @@
+.feeds {
+  background-color:$beige;
+  padding: 20px 0 20px 0;
+  margin-top: 10px;
+  display: flex;
+  @include shadow;
+  @include max-width(sm) {
+    padding:0 11px;
+    flex-direction: column;
+  }
+  &_latest-post {
+    border-right:1px solid $black;
+    flex-basis:50%;
+    color:$greencolor;
+    padding:0 15px;
+    @include max-width(sm) {
+      border-right: none;
+      margin-top: 15px;
+      flex-basis: auto;
+      padding:10px 0 10px 0;
+    }
+    & h3 {
+      margin-bottom:10px;
+    }
+    & h3 a {
+      color: $greencolor;
+      text-decoration:none;
+    }
+  }
+  &_twitterbadge {
+    padding: 0 15px;
+    @include max-width(sm) {
+      padding:0 0 10px 0;
+    }
+  }
+  &_feedtitle {
+    display: flex;
+    justify-content: space-between;
+    @include max-width(sm) {
+      border-top: 1px solid $black;
+      padding:10px 0 0 0;
+    }
+    @include max-width(xs) {
+      flex-direction: column;
+    }
+  }
+
+  &_twittermeta {
+    font-size:0.667em;
+    font-family: 'LatoBold';
+  }
+  &_tweetcontent, .e-entry-title, & #twitter-widget-0 {
+    color:#26686d;
+  }
+
+  .readmore {
+    text-align:right;
+    margin-right:20px;
+    text-decoration:underline;
+  }
+
+  #footer-column2 {
+    border-top:1px solid $black;
+    margin-top:10px;
+    padding-top: 10px;
+  }
+}
