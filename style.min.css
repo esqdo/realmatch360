@@ -1661,8 +1661,8 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 .featured__questions-wrapper .question h3{height:auto;margin-bottom:10px}
 .featured__testimonial{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 22px}
 .featured__logo-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
-.featured__logo-wrapper a{width:80%}
-.featured__logo-wrapper a img{width:100%}
+.featured__logo-wrapper a{-webkit-flex-basis:80px;-ms-flex-preferred-size:80px;flex-basis:80px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:80%}
+.featured__logo-wrapper a img{display:block;width:100%}
 .testimonial__image{padding:20px 15px}
 .testimonial__image img{display:block;margin:0 auto;width:60%}
 #featuredsubnav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
