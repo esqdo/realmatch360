@@ -330,8 +330,11 @@ button.btn-login {
 }
 
 header .header-image {
-  width:60%;
+  width:70%;
   margin:0 auto;
+  @include max-width(sm) {
+    width:80%;
+  }
   @include max-width(sm) {
     width:100%;
   }
