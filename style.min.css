@@ -1109,8 +1109,8 @@ strong,b,.bold{font-family:'LatoBold'}
 .post-not-found>*{padding:0 22px}
 .inbound-label{font-family:'LatoLatinLight'}
 #container input[type="text"],#container textarea{color:#000}
-#header{margin-top:10px;background:#fff;padding:15px 0 30px 0;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-#headernav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+#header{margin-top:10px;background:#fff;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
+#headernav{padding:15px 0 30px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 #headernav #site-title{padding-left:15px}
 #headernav .mobile-menu{margin-right:auto}
 #headernav .mobile-menu ul{display:block;list-style:none;padding-left:15px}
@@ -1637,6 +1637,7 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 #headernav{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:15px 0 30px 0}
 #headernav .main-menu>div>ul{display:none}
 #headernav #pageNavigationTop{margin-top:20px;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
+header .header-image{width:100%}
 #footernav h3{margin-top:10px}
 .homeintro{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .homeintro__play{position:static;text-align:center}

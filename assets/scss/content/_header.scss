@@ -3,11 +3,11 @@
 #header {
   margin-top:10px;
   background:$white;
-  padding:15px 0 30px 0;
   @include shadow;
 }
 
 #headernav {
+    padding:15px 0 30px 0;
     display:flex;
     justify-content: space-between;
   @include max-width(sm) {
@@ -332,6 +332,9 @@ button.btn-login {
 header .header-image {
   width:60%;
   margin:0 auto;
+  @include max-width(sm) {
+    width:100%;
+  }
   img {
     width:100%;
   }
