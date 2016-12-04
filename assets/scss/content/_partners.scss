@@ -1,6 +1,7 @@
 .partners {
   background-color:$greencolor;
   margin-top:10px;
+  padding: 10px 0 20px 0;
   @include shadow;
   & h2 {
     color:$white;
