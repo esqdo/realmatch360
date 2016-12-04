@@ -10,6 +10,7 @@
   &__wrapper {
     display:flex;
     @include max-width(md) {
+      display: block;
       flex-direction: column;
     }
   }
