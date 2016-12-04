@@ -14,6 +14,7 @@
     }
   }
   &__service {
+    flex-basis: 33%;
     padding: 22px;
     @include max-width(md) {
       padding:11px;

@@ -1390,7 +1390,7 @@ img.fb{width:100%;border:1px #f00 solid}
 .services{margin-top:10px;background-color:#26686d;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 .services h2{color:#fff;padding:30px 22px;text-align:center}
 .services__wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
-.services__service{padding:22px}
+.services__service{-webkit-flex-basis:33%;-ms-flex-preferred-size:33%;flex-basis:33%;padding:22px}
 .services__content{color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center}
 .services__content h3{padding:20px 0 0 0;color:#fff;-webkit-flex-basis:60px;-ms-flex-preferred-size:60px;flex-basis:60px}
 .services__content p:first-child{margin:0;-webkit-flex-basis:70px;-ms-flex-preferred-size:70px;flex-basis:70px}
