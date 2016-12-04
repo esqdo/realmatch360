@@ -111,7 +111,11 @@
       padding:0 10px;
       flex-basis: 18%;
       @include max-width(sm) {
-        width:80%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60px;
+        align-items: center;
         & img {
           width:100%;
         }
