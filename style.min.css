@@ -1442,8 +1442,8 @@ img.fb{width:100%;border:1px #f00 solid}
 .featured__questions{margin-top:10px !important;background:#e8e7db}
 .featured__questions h2{padding:15px 20px 15px 20px;color:#26686d}
 .featured__questions h2 span{font-family:'dosisregular'}
-.featured__questions-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
-.featured__questions-wrapper .questionwrapper{-webkit-flex-basis:30%;-ms-flex-preferred-size:30%;flex-basis:30%;padding-bottom:15px}
+.featured__questions-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:0 22px}
+.featured__questions-wrapper .questionwrapper{width:32%;padding-bottom:15px}
 .featured__questions-wrapper .questionwrapper p{color:#26686d}
 .featured__questions-wrapper .question h3{height:60px}
 .featured__questions-wrapper .question h4{text-transform:none;font-family:'LatoLatinLight'}
@@ -1656,7 +1656,8 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 .feeds_twitterbadge{padding:0 0 10px 0}
 .feeds_feedtitle{border-top:1px solid #1c1c1c;padding:10px 0 0 0}
 .stretch{height:auto}
-.featured__questions-wrapper{padding:0 11px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.featured__questions-wrapper{padding:0 22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.featured__questions-wrapper .questionwrapper{width:100%}
 .featured__questions-wrapper .question h3{height:auto;margin-bottom:10px}
 .featured__testimonial{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 22px}
 .featured__logo-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}

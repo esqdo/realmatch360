@@ -68,37 +68,6 @@ get_header(); ?>
 
                 <?php endwhile;wp_reset_postdata(); ?>
              </div>
-
-            <!-- <div class="customers__menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'featured-menu' ) ); ?>
-            </div>
-            <div class="customers__wrapper">
-                <div class="customers__column">
-                    <div class="customers__images">
-                        <?php the_field('projektentwickler_logos'); ?>
-                    </div>
-                </div>
-                <div class="customers__column">
-                    <div class="customers__images">
-                        <?php the_field('investoren_logos'); ?>
-                    </div>
-                </div>
-                <div class="customers__column">
-                    <div class="customers__images">
-                        <?php the_field('bewirtschafter_logos'); ?>
-                    </div>
-                </div>
-                <div class="customers__column">
-                    <div class="customers__images">
-                        <?php the_field('bewerter_logos'); ?>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Nachfragedaten -->
-            <div class="customers__data">
-                <?php the_field('nachfragedaten'); ?>
-            </div>
-            <!-- Nachfragedaten -->
         </section>
         <!-- Kunden -->
 
