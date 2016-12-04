@@ -1112,7 +1112,7 @@ strong,b,.bold{font-family:'LatoBold'}
 #header{margin-top:10px;background:#fff;padding:15px 0 30px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 #header #site-title{padding-left:15px}
 #header .mobile-menu{margin-right:auto}
-#header .mobile-menu ul{list-style:none;padding-left:15px}
+#header .mobile-menu ul{display:block;list-style:none;padding-left:15px}
 #header .mobile-menu .toggle-menu a>i{color:#26686d;font-size:4rem}
 #header .mobile-menu>ul>div{border-top:1px solid grey;margin-top:15px;visibility:hidden;position:absolute;margin-left:-15px}
 #header .mobile-menu>ul>div.active{visibility:visible;width:456px}
@@ -1635,10 +1635,10 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 #header .main-menu>div>ul{display:none}
 #header #pageNavigationTop{margin-top:20px;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
 #footernav h3{margin-top:10px}
-.homeintro{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.homeintro{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .homeintro__play{position:static;text-align:center}
 .homeintro__play i{position:static}
-.customers__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.customers__wrapper{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .customers__column img{width:60%}
 .customers__support{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .customers__support div{margin-top:15px;-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}
@@ -1659,7 +1659,7 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 .featured__questions-wrapper{padding:0 22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .featured__questions-wrapper .questionwrapper{width:100%}
 .featured__questions-wrapper .question h3{height:auto;margin-bottom:10px}
-.featured__testimonial{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 22px}
+.featured__testimonial{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0 22px}
 .featured__logo-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .featured__logo-wrapper a{-webkit-flex-basis:80px;-ms-flex-preferred-size:80px;flex-basis:80px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:80%}
 .featured__logo-wrapper a img{display:block;width:100%}

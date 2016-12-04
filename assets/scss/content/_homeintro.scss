@@ -9,6 +9,7 @@
   justify-content: space-between;
   @include shadow;
   @include max-width(sm) {
+    display: block;
     flex-direction: column;
   }
   &__content {

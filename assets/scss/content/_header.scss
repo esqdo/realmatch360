@@ -16,6 +16,7 @@
   & .mobile-menu {
     margin-right:auto;
     & ul {
+      display: block;
       list-style: none;
       padding-left:15px;
     }

@@ -99,6 +99,7 @@
     justify-content: space-around;
     align-items: center;
     @include max-width(sm) {
+      display: block;
       flex-direction: column;
       padding:0 22px;
     }

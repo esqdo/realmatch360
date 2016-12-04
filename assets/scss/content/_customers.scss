@@ -12,6 +12,7 @@
     display:flex;
     justify-content: space-between;
     @include max-width(sm) {
+      display: block;
       flex-direction: column;
     }
   }
