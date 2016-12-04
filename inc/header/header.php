@@ -79,6 +79,12 @@
 		<!-- Login Formular -->
 	</div>
 	<!-- Header Nav/Login -->
+	<!-- Header Image Cartoon -->
+	<?php if( get_field('header_image') ): ?>
+		<img src="<?php the_field('header_image'); ?>"  alt="<?php get_bloginfo( 'description' ); ?>" />
+	<?php endif; ?>
+	<!-- Header Image Cartoon -->
+
 </header>
 
 

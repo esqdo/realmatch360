@@ -1109,7 +1109,7 @@ strong,b,.bold{font-family:'LatoBold'}
 .post-not-found>*{padding:0 22px}
 .inbound-label{font-family:'LatoLatinLight'}
 #container input[type="text"],#container textarea{color:#000}
-#header{margin-top:10px;background:#fff;padding:15px 0 30px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+#header{margin-top:10px;background:#fff;padding:15px 0 30px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 #header #site-title{padding-left:15px}
 #header .mobile-menu{margin-right:auto}
 #header .mobile-menu ul{display:block;list-style:none;padding-left:15px}
@@ -1343,7 +1343,7 @@ img.fb{width:100%;border:1px #f00 solid}
 #facebook .b2c.text{color:#933383;background:#fff;height:140px;padding:20px}
 #facebook .b2c.text a,#facebook .b2c.text a:visited{color:#fff}
 .gobutton{height:37px;text-align:center;background-color:rgba(147,51,131,0.9);color:white;width:95%;border:0;border:0;margin-left:5px;font-size:14px;font-weight:900;text-transform:uppercase;margin-top:0;cursor:pointer;display:block;line-height:37px}
-.homeintro{background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:30px 22px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
+.homeintro{margin-top:10px;background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:30px 22px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 .homeintro__content h1{text-transform:none;margin:10px 0}
 .homeintro__content p{font-size:2rem}
 .homeintro__content ul{margin:0;font-size:2rem;line-height:2.5rem;padding-left:5px;list-style:none}

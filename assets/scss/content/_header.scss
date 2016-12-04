@@ -6,6 +6,7 @@
     padding:15px 0 30px 0;
     display:flex;
     justify-content: space-between;
+    @include shadow;
   @include max-width(sm) {
     flex-direction: column;
     padding:15px 0 30px 0;
