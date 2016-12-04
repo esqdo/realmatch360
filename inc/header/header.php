@@ -1,6 +1,6 @@
 
 <header class="container">
-	<div id=""header">
+	<div id="header">
 		<!-- Logo -->
 		<div id="site-title">
 			<h1>
