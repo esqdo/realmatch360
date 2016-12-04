@@ -1665,7 +1665,7 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 .featured__logo-wrapper a img{display:block;width:100%}
 .testimonial__image{padding:20px 15px}
 .testimonial__image img{display:block;margin:0 auto;width:60%}
-#featuredsubnav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+#featuredsubnav ul{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 }@media only screen and (max-width:479px){.container{width:300px}
 .container .grid_1,.container .grid_2,.container .grid_3,.container .grid_4,.container .grid_5,.container .grid_6,.container .grid_7,.container .grid_8,.container .grid_9,.container .grid_10,.container .grid_11,.container .grid_12{width:260px}
 .sidebar{display:none}
