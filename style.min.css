@@ -1346,12 +1346,12 @@ img.fb{width:100%;border:1px #f00 solid}
 #facebook .b2c.text{color:#933383;background:#fff;height:140px;padding:20px}
 #facebook .b2c.text a,#facebook .b2c.text a:visited{color:#fff}
 .gobutton{height:37px;text-align:center;background-color:rgba(147,51,131,0.9);color:white;width:95%;border:0;border:0;margin-left:5px;font-size:14px;font-weight:900;text-transform:uppercase;margin-top:0;cursor:pointer;display:block;line-height:37px}
-.homeintro{margin-top:10px;background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:30px 22px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-.homeintro__content h1{text-transform:none;margin:10px 0}
+.homeintro{margin-top:10px;background:#fc0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:40px 50px 60px 50px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
+.homeintro__content h1{font-size:4.5rem;line-height:5rem;text-transform:none;margin:10px 0}
 .homeintro__content p{font-size:2rem}
 .homeintro__content ul{margin:0;font-size:2rem;line-height:2.5rem;padding-left:5px;list-style:none}
 .homeintro__content ul>li:before{content:'- '}
-.homeintro__play{-webkit-flex-basis:40%;-ms-flex-preferred-size:40%;flex-basis:40%;position:relative}
+.homeintro__play{-webkit-flex-basis:20%;-ms-flex-preferred-size:20%;flex-basis:20%;position:relative}
 .homeintro__play a{color:#26686d}
 .homeintro__play a:hover{color:#296f75}
 .homeintro__play i{font-size:15rem;position:absolute;top:20%;left:5%;translate3d:-50%,-50%,0}
@@ -1640,7 +1640,7 @@ h2.team-title{padding-bottom:5px;padding-top:0}
 header .header-image{width:80%}
 header .header-image{width:100%}
 #footernav h3{margin-top:10px}
-.homeintro{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.homeintro{display:block;padding:25px 25px 30px 25px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .homeintro__play{position:static;text-align:center}
 .homeintro__play i{position:static}
 .customers__wrapper{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
