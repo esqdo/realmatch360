@@ -110,3 +110,10 @@ strong, b, .bold {
 .inbound-label {
   font-family: 'LatoLatinLight';
 }
+
+.dashed-list {
+  list-style-type: none;
+  & > li:before {
+    content: '- ';
+  }
+}

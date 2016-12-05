@@ -11,7 +11,7 @@
         <li><a href="https://plus.google.com/b/101212378203894800980/101212378203894800980" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
     </ul>
 
-    <div id="copyright"><p>&copy;<?php echo date(' Y '); ?> Immo Marktdaten AG</p></div>
+    <div id="copyright"><p>&copy;<?php echo date(' Y '); ?> Real Estate Digital AG</p></div>
 
 </footer>
 <!-- Footer -->
