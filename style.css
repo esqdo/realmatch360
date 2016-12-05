@@ -3230,7 +3230,7 @@ img.fb  { width: 100%; border: 1px #ff0000 solid; }
 
 .employees__member-content i { margin: 10px 10px 10px 0; }
 
-.employees__member-content img { width: 100%; border-radius: 50%; }
+.employees__member-content img { width: 100%; border-radius: 10%; }
 
 .employees__member-content > p i { margin-right: 5px; }
 
