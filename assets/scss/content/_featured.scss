@@ -137,7 +137,10 @@
 .testimonial {
   &__image {
     padding:50px 15px;
-    flex-basis:25%;
+    flex-basis:21%;
+    @include max-width(md) {
+      flex-basis:23%;
+    }
     @include max-width(sm) {
       padding: 20px 15px;
     }
@@ -147,13 +150,19 @@
       @include max-width(sm) {
         display: block;
         margin: 0 auto;
-        width:60%;
+        width:55%;
+      }
+      @include max-width(xs) {
+        width:65%;
       }
     }
   }
   &__text {
-    flex-basis:66%;
+    flex-basis:70%;
     color:#FFF;
+    @include max-width(md) {
+      flex-basis:68%;
+    }
     & h4 {
       color:#FFF;
     }

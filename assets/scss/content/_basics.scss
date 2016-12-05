@@ -24,6 +24,12 @@ h1 {  /* «Wir wissen wo wer wohnen will» */
   line-height: 40px;
   text-transform: uppercase;
   color: #26686d;    /* plus #FFF */
+  @include max-width(sm) {
+    font-size: 3.2rem;
+  }
+  @include max-width(xs) {
+    font-size: 2.8rem;
+  }
 }
 
 h2 {
@@ -33,15 +39,27 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #26686d;    /* plus #FFF */
+  @include max-width(sm) {
+    font-size: 2.5rem;
+  }
+  @include max-width(xs) {
+    font-size: 2.1rem;
+  }
 }
 
 h3 {
   font-family: 'geogrotesquesemibold', sans-serif;
   font-size: 2.2rem;
-  line-height: 20px;
+  line-height: 25px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #26686d;    /* plus #FFF */
+  @include max-width(sm) {
+    font-size: 2rem;
+  }
+  @include max-width(xs) {
+    font-size: 1.7rem;
+  }
 }
 
 h4 {

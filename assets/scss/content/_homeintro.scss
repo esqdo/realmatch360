@@ -20,6 +20,10 @@
       line-height: 5rem;
       text-transform: none;
       margin: 10px 0;
+      @include max-width(sm) {
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+      }
     }
     & p {
       font-size:2rem;
