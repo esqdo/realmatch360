@@ -3278,7 +3278,7 @@ img.fb  { width: 100%; border: 1px #ff0000 solid; }
 
 .feeds .readmore { text-align: right; margin-right: 20px; text-decoration: underline; }
 
-.feeds #footer-column2 { border-top: 1px solid #1c1c1c; margin-top: 10px; padding-top: 10px; }
+.feeds #footer-column2 { border-top: 1px solid #1c1c1c; margin-top: 30px; padding-top: 20px; }
 
 /* Featured */
 .usewrp { padding: 0 22px; }
