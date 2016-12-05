@@ -1112,7 +1112,7 @@ strong,b,.bold{font-family:'LatoBold'}
 .dashed-list>li:before{content:'- '}
 #container input[type="text"],#container textarea{color:#000}
 #header{margin-top:10px;background:#fff;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-#headernav{padding:15px 0 30px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+#headernav{padding:15px 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 #headernav #site-title{padding-left:15px}
 #headernav .mobile-menu{margin-right:auto}
 #headernav .mobile-menu ul{display:block;list-style:none;padding-left:15px}
@@ -1121,13 +1121,13 @@ strong,b,.bold{font-family:'LatoBold'}
 #headernav .mobile-menu>ul>div.active{visibility:visible;width:456px}
 #headernav .mobile-menu>ul>div.active ul{padding-left:0;width:100%;box-shadow:0 4px 2px -2px gray}
 #headernav .mobile-menu>ul>div.active ul li{background:#26686d}
-#headernav .mobile-menu>ul>div.active ul li:hover{background:#40b0b9}
+#headernav .mobile-menu>ul>div.active ul li:hover{background:#93b3b8}
 #headernav .mobile-menu>ul>div.active ul li a{display:block;padding:15px 15px;color:#fff}
 #headernav .main-menu>div>ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0;list-style:none}
 #headernav .main-menu>div>ul li{margin:5px 0;padding:0 5px;border-right:1px solid #1c1c1c}
 #headernav .main-menu>div>ul li.current-menu-item a{color:#1c1c1c;text-decoration:underline}
 #headernav .main-menu>div>ul li a{font-size:1.6rem;font-family:"LatoBold";color:#26686d}
-#headernav .main-menu>div>ul li a:hover{color:#40b0b9}
+#headernav .main-menu>div>ul li a:hover{color:#93b3b8}
 #headernav .main-menu>div>ul li:last-child{border-right:0}
 #headernav #pageNavigationTop{padding-right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 #headernav #pageNavigationTop button{margin-right:10px;margin-left:5px}
@@ -1142,7 +1142,7 @@ strong,b,.bold{font-family:'LatoBold'}
 article .page{background:#26686d}
 .btn{font-weight:300}
 button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !important;font-family:"LatoBold";height:42px;padding:0 10px}
-.btn-login:hover,#consultation_appointment-button:hover{color:#121314;background-color:#40b0b9}
+.btn-login:hover,#consultation_appointment-button:hover{color:#121314;background-color:#93b3b8}
 .close-button:hover{cursor:pointer;color:#CCC}
 .popover-title{font-family:"LatoBold" !important;background:#26686d;text-transform:none !important;font-size:1.6rem !important}
 .popover-content{padding-left:20px;padding-right:20px}
@@ -1168,7 +1168,7 @@ button.btn-login{font-size:1.6rem;text-decoration:none;text-transform:none !impo
 .row{margin-right:-15px;margin-left:-15px}
 .form-group{margin-bottom:15px}
 header .header-image{width:70%;margin:0 auto}
-header .header-image img{width:100%}
+header .header-image img{width:100%;display:block}
 .popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;text-align:left;white-space:normal;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);border-radius:6px;box-shadow:0 5px 10px rgba(0,0,0,0.2)}
 .popover.top{margin-top:-10px}
 .popover.right{margin-left:10px}

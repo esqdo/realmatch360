@@ -7,7 +7,7 @@
 }
 
 #headernav {
-    padding:15px 0 30px 0;
+    padding:15px 0 0 0;
     display:flex;
     justify-content: space-between;
   @include max-width(sm) {
@@ -51,7 +51,7 @@
             background: $greencolor;
 
             &:hover {
-              background: lighten($greencolor,20);
+              background: $greencolorhover;
             }
             & a {
               display: block;
@@ -83,7 +83,7 @@
         font-family: $latobold;
         color: $greencolor;
         &:hover {
-          color:lighten($greencolor,20);
+          color:$greencolorhover;
         }
       }
     }
@@ -176,7 +176,7 @@ button.btn-login {
 
 .btn-login:hover, #consultation_appointment-button:hover {
     color:#121314;
-  background-color:lighten($greencolor,20);
+  background-color:$greencolorhover;
 }
 
 .close-button:hover {
@@ -340,5 +340,6 @@ header .header-image {
   }
   img {
     width:100%;
+    display:block;
   }
 }
