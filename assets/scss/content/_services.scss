@@ -29,7 +29,7 @@
     & h3 {
       padding:20px 0 0 0;
       color:$white;
-      flex-basis:80px;
+      flex-basis:110px;
       @include max-width(md) {
         flex-basis:auto;
       }

@@ -1362,7 +1362,7 @@ img.fb{width:100%;border:1px #f00 solid}
 .services__wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
 .services__service{-webkit-flex-basis:33%;-ms-flex-preferred-size:33%;flex-basis:33%;padding:22px}
 .services__content{color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center}
-.services__content h3{padding:20px 0 0 0;color:#fff;-webkit-flex-basis:80px;-ms-flex-preferred-size:80px;flex-basis:80px}
+.services__content h3{padding:20px 0 0 0;color:#fff;-webkit-flex-basis:110px;-ms-flex-preferred-size:110px;flex-basis:110px}
 .services__content p:first-child{margin:0;-webkit-flex-basis:70px;-ms-flex-preferred-size:70px;flex-basis:70px}
 .services__buttons{background:#26686d;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;padding:10px 0 45px 0}
 .services__buttons .button{margin:0 10px}
@@ -1700,10 +1700,12 @@ h1.page-title{margin:5px}
 .jobname{margin-bottom:10px}
 .employee{height:auto}
 .contentblock h2{color:#FFF;word-spacing:normal}
-}@media(max-width:479px){h1{font-size:2.8rem}
-h2{font-size:2.1rem}
-h3{font-size:1.7rem}
+}@media(max-width:479px){h1{font-size:2.2rem}
+h2{font-size:2rem}
+h3{font-size:1.6rem}
 #headernav .mobile-menu>ul>div.active{width:300px}
+.homeintro__content h1{font-size:2.5rem;line-height:3rem}
+.homeintro__content ul{font-size:1.7rem;line-height:2rem}
 .feeds_feedtitle{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .featured__logo-wrapper a{width:100%}
 .testimonial__image img{width:65%}
