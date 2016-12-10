@@ -68,6 +68,12 @@ get_header(); ?>
 
                 <?php endwhile;wp_reset_postdata(); ?>
              </div>
+
+            <!-- Nachfragedaten -->
+            <div class="customers__data">
+                <?php the_field('nachfragedaten'); ?>
+            </div>
+            <!-- Nachfragedaten -->
         </section>
         <!-- Kunden -->
 
