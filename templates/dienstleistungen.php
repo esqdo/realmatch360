@@ -21,13 +21,15 @@ Template Name: Dienstleistungen
 	<div class="clear"></div>
 
     <div class="grid_6 omega productimage">
-    <?php $image = get_field('detailanalysescreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+        <?php if( get_field('detailanalysescreenshot') ): ?>
+    <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <?php endif; ?>
     </div>
 	<div class="grid_5 omega"><?php the_field('detailanalyse');?></div>
         <div class="grid_6 omega productimagemobile">
-    <?php $image = get_field('detailanalysescreenshot');if( !empty($image) ): ?>
-    <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" /><?php endif; ?>
+            <?php if( get_field('detailanalysescreenshot') ): ?>
+            <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
+            <?php endif; ?>
     </div>
 
 	<div class="clear"></div><br>
@@ -35,36 +37,42 @@ Template Name: Dienstleistungen
 
 
      <div class="grid_6 omega productimage">
-    <?php $image = get_field('_projektcheckscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+         <?php if( get_field('_projektcheckscreenshot') ): ?>
+             <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
+         <?php endif; ?>
     </div>
 	<div class="grid_5 omega"><?php the_field('projektcheck');?></div>
       <div class="grid_6 omega productimagemobile">
-    <?php $image = get_field('_projektcheckscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+          <?php if( get_field('_projektcheckscreenshot') ): ?>
+              <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
+          <?php endif; ?>
     </div>
 
     <div class="clear"></div><br>
 
       <div class="grid_6 omega productimage">
-    <?php $image = get_field('_pricesetterscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+          <?php if( get_field('_pricesetterscreenshot') ): ?>
+              <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
+          <?php endif; ?>
     </div>
 	<div class="grid_5 omega"><?php the_field('pricesetter');?></div>
       <div class="grid_6 omega productimagemobile">
-    <?php $image = get_field('_pricesetterscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+          <?php if( get_field('_pricesetterscreenshot') ): ?>
+              <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
+          <?php endif; ?>
     </div>
     <div class="clear"></div><br>
 
     <div class="grid_6 omega productimage">
-        <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+        <?php if( get_field('ms-regionscreenshot') ): ?>
+            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <?php endif; ?>
     </div>
     <div class="grid_5 omega"><?php the_field('ms-region');?></div>
     <div class="grid_6 omega productimagemobile">
-        <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+        <?php if( get_field('ms-regionscreenshot') ): ?>
+            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <?php endif; ?>
     </div>
 
 
