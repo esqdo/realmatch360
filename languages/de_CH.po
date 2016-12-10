@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Realmatch360\n"
-"POT-Creation-Date: 2016-10-06 22:24+0200\n"
-"PO-Revision-Date: 2016-10-06 22:24+0200\n"
+"POT-Creation-Date: 2016-12-10 15:01+0100\n"
+"PO-Revision-Date: 2016-12-10 15:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_CH\n"
@@ -51,11 +51,6 @@ msgstr "Jahresarchive: %s"
 msgid "Archives"
 msgstr "Archive"
 
-#: attachment.php:6
-#, php-format
-msgid "Return to %s"
-msgstr "Zurück zu %s"
-
 #: author.php:5
 msgid "Author Archives"
 msgstr "Autor Archive"
@@ -77,43 +72,35 @@ msgstr "Trackback"
 msgid "Comments"
 msgstr "Kommentare"
 
-#: footer.php:30 templates/frontpage.php:255
-msgid "Read More"
-msgstr "Ganzer Artikel"
-
-#: footer.php:32 templates/frontpage.php:257
-msgid "More Articles"
-msgstr "Weitere Artikel"
-
-#: footer.php:38 templates/frontpage.php:267
-msgid "Twitter @ImmoDigest"
-msgstr "Twitter @ImmoDigest"
-
-#: functions.php:63
+#: functions.php:56
 msgid "Sidebar Widget Area"
 msgstr "Sidebar Widget Area"
 
-#: functions.php:71
+#: functions.php:64
 msgid "Footer Column1 Widget Area"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:72
+msgid "Footer Column2 Widget Area"
+msgstr ""
+
+#: functions.php:90
 msgid "Blog Widget Area"
 msgstr "Blog Widget Area"
 
-#: functions.php:155
+#: functions.php:156
 msgid "Choose and display a single offer"
 msgstr "Wähle ein einzelnes Angebot"
 
-#: functions.php:157 inc/customposts/customposts.php:27
+#: functions.php:158 inc/customposts/customposts.php:27
 msgid "Offers"
 msgstr "Angebote"
 
-#: functions.php:188
+#: functions.php:189
 msgid "Select an Offer:"
 msgstr "Wähle ein Angebot:"
 
-#: functions.php:199
+#: functions.php:200
 msgid "No offers were found"
 msgstr "Keine Angebote wurden gefunden"
 
@@ -1416,7 +1403,7 @@ msgid "Select multiple values?"
 msgstr ""
 
 #: inc/advanced-custom-fields/core/fields/password.php:19
-#: inc/header/header.php:41 inc/header/header.php:43
+#: inc/header/header.php:51 inc/header/header.php:53
 #: inc/headerforms/loginforms.php:29 inc/headerforms/loginforms.php:31
 msgid "Password"
 msgstr "Passwort"
@@ -1965,37 +1952,33 @@ msgstr ""
 msgid "Offer"
 msgstr "Angebot"
 
-#: inc/customposts/customposts.php:40
-msgid "Services"
+#: inc/customposts/customposts.php:40 inc/customposts/customposts.php:41
+msgid "Products"
 msgstr ""
 
-#: inc/customposts/customposts.php:41
-msgid "Service"
-msgstr ""
-
-#: inc/header/header.php:17 inc/header/header.php:54
+#: inc/header/header.php:27 inc/header/header.php:64
 #: inc/headerforms/loginforms.php:10 inc/headerforms/loginforms.php:42
 msgid "Login"
 msgstr "Login"
 
-#: inc/header/header.php:33 inc/header/header.php:35
+#: inc/header/header.php:43 inc/header/header.php:45
 #: inc/headerforms/loginforms.php:21 inc/headerforms/loginforms.php:23
 msgid "E-Mail"
 msgstr "E-Mail"
 
-#: inc/header/header.php:48 inc/headerforms/loginforms.php:36
+#: inc/header/header.php:58 inc/headerforms/loginforms.php:36
 msgid "Remember Me"
 msgstr "Angemeldet bleiben"
 
-#: inc/header/header.php:54 inc/headerforms/loginforms.php:42
+#: inc/header/header.php:64 inc/headerforms/loginforms.php:42
 msgid "Checking..."
 msgstr "Überprüfe…"
 
-#: inc/header/header.php:61 inc/headerforms/loginforms.php:49
+#: inc/header/header.php:71 inc/headerforms/loginforms.php:49
 msgid "Forgot Password?"
 msgstr "Passwort vergessen?"
 
-#: inc/header/header.php:67 inc/header/header.php:68
+#: inc/header/header.php:77 inc/header/header.php:78
 #: inc/headerforms/loginforms.php:55 inc/headerforms/loginforms.php:56
 msgid "Login failed."
 msgstr "Anmeldung fehlgeschlagen."
@@ -2027,7 +2010,7 @@ msgstr "Sorry, nicht gefunden. Bitte nochmals versuchen."
 msgid "Tag Archives: "
 msgstr "Tag Archive:"
 
-#: templates/about.php:25
+#: templates/about.php:29
 msgid "Adhoc order form"
 msgstr "Adhoc Bestellformular"
 
@@ -2036,20 +2019,40 @@ msgid "118894194"
 msgstr "83177919"
 
 #: templates/frontpage-redesign.php:30
-msgid "Our Online-Services for You"
-msgstr ""
+msgid "Our online services for You"
+msgstr "Unsere Online-Dienstleistungen für Sie"
 
-#: templates/frontpage-redesign.php:50
-msgid "Over 100 Customers trust Realmatch360"
-msgstr ""
+#: templates/frontpage-redesign.php:47 templates/frontpage-redesign.php:103
+msgid "Try for free"
+msgstr "Gratis ausprobieren"
 
-#: templates/frontpage-redesign.php:83
-msgid "We are there for you"
+#: templates/frontpage-redesign.php:48
+msgid "Agree to the live demo"
+msgstr "Live Demo vereinbaren"
+
+#: templates/frontpage-redesign.php:56
+msgid "Over 120 Customers rely Realmatch360"
+msgstr "Über 120 Kunden vertrauen auf Realmatch360"
+
+#: templates/frontpage-redesign.php:82
+msgid "Partners"
+msgstr "Unsere Partner"
+
+#: templates/frontpage-redesign.php:92
+msgid "We're there for you"
 msgstr "Wir sind für Sie da"
 
-#: templates/frontpage-redesign.php:95
-msgid "Partners"
-msgstr ""
+#: templates/frontpage-redesign.php:119 templates/frontpage.php:255
+msgid "Read More"
+msgstr "Ganzer Artikel"
+
+#: templates/frontpage-redesign.php:121 templates/frontpage.php:257
+msgid "More Articles"
+msgstr "Weitere Artikel"
+
+#: templates/frontpage-redesign.php:132 templates/frontpage.php:267
+msgid "Twitter @ImmoDigest"
+msgstr "Twitter @ImmoDigest"
 
 #: templates/frontpage.php:33
 msgid "More Information"
@@ -2082,6 +2085,12 @@ msgstr "Silvan Adrian"
 #. Author URI of the plugin/theme
 msgid "http://silvanadrian.ch"
 msgstr "http://silvanadrian.ch"
+
+#~ msgid "We are there for you"
+#~ msgstr "Wir sind für Sie da"
+
+#~ msgid "Return to %s"
+#~ msgstr "Zurück zu %s"
 
 #~ msgid "For "
 #~ msgstr "Für"

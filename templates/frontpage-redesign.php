@@ -27,7 +27,7 @@ get_header(); ?>
 
         <!-- Dienstleistungen -->
         <section class="services">
-            <h2><?php _e('Our Online-Services for You', 'realmatch360'); ?></h2>
+            <h2><?php _e('Our online services for You', 'realmatch360'); ?></h2>
             <div class="services__wrapper">
                 <?php
                 $service =  new WP_Query( 'post_type=products' );
@@ -44,8 +44,8 @@ get_header(); ?>
             </div>
             <div class="services__buttons">
                 <div class="buttons_wrapper">
-                    <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try it for free', 'realmatch360'); ?></a>
-                    <a class="button" href="<?php echo get_permalink(icl_object_id(915,'page',false,ICL_LANGUAGE_CODE));?>" target="_blank"><?php _e('Live Demo?', 'realmatch360'); ?></a>
+                    <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try for free', 'realmatch360'); ?></a>
+                    <a class="button" href="<?php echo get_permalink(icl_object_id(915,'page',false,ICL_LANGUAGE_CODE));?>" target="_blank"><?php _e('Agree to the live demo', 'realmatch360'); ?></a>
                 </div>
             </div>
         </section>
@@ -53,7 +53,7 @@ get_header(); ?>
 
         <!-- Kunden -->
         <section class="customers">
-            <h2><?php _e('Over 120 Customers trust Realmatch360', 'realmatch360'); ?></h2>
+            <h2><?php _e('Over 120 Customers rely Realmatch360', 'realmatch360'); ?></h2>
 
             <div class="customers__wrapper">
                 <?php $args = array( 'post_type' => 'featured' );
@@ -89,7 +89,7 @@ get_header(); ?>
         <!-- Wir sind für Sie Da-->
         <section class="customers">
             <div class="customers__support-wrapper">
-                <h2><?php _e('We are there for you', 'realmatch360'); ?></h2>
+                <h2><?php _e('We\'re there for you', 'realmatch360'); ?></h2>
                 <div class="customers__support">
                     <?php the_field('wir_sind_fur_sie_da'); ?>
                 </div>
@@ -100,7 +100,7 @@ get_header(); ?>
         <!-- Button -->
         <div class="services__buttons bottom">
             <div class="buttons_wrapper">
-                <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try it for free', 'realmatch360'); ?></a>
+                <a class="button" href="https://www.realmatch360.com/app/report-city.html" target="_blank"><?php _e('Try for free', 'realmatch360'); ?></a>
             </div>
         </div>
         <!-- Button -->
