@@ -32,16 +32,7 @@ Template Name: Dienstleistungen
 
 	<div class="clear"></div><br>
 
-     <div class="grid_6 omega productimage">
-    <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
-    </div>
-	<div class="grid_5 omega"><?php the_field('ms-region');?></div>
-      <div class="grid_6 omega productimagemobile">
-    <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
-    </div>
-	<div class="clear"></div><br>
+
 
      <div class="grid_6 omega productimage">
     <?php $image = get_field('_projektcheckscreenshot');if( !empty($image) ): ?>
@@ -65,6 +56,16 @@ Template Name: Dienstleistungen
     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
     </div>
 
+    <div class="grid_6 omega productimage">
+        <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+    </div>
+    <div class="grid_5 omega"><?php the_field('ms-region');?></div>
+    <div class="grid_6 omega productimagemobile">
+        <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+    </div>
+    <div class="clear"></div><br>
 
 	<div class="clear"></div><br>
      <div class="grid_11 omega"><?php the_field('preisliste');?></div>
