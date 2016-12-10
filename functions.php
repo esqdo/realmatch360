@@ -9,13 +9,6 @@ function realmatch360_setup() {
 /* Advanced Custom Fields */
 define( 'ACF_LITE', false );
 include_once('inc/advanced-custom-fields/acf.php');
-/* Include Custom Fields */
-include_once('inc/customfields/employee.php');
-include_once('inc/customfields/featured.php');
-include_once('inc/customfields/homepage.php');
-include_once('inc/customfields/products.php');
-include_once('inc/customfields/sales.php');
-include_once('inc/customfields/team.php');
 
 /**
  * Enqueue scripts and styles.
