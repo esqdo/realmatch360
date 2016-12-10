@@ -27,7 +27,7 @@ Template Name: Dienstleistungen
 	<div class="grid_5 omega"><?php the_field('detailanalyse');?></div>
         <div class="grid_6 omega productimagemobile">
     <?php $image = get_field('detailanalysescreenshot');if( !empty($image) ): ?>
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+    <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" /><?php endif; ?>
     </div>
 
 	<div class="clear"></div><br>

@@ -10,7 +10,7 @@
         <?php
         $image = get_field('testimonial_picture');
         if( !empty($image) ): ?>
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <img src="<?php the_field('testimonial_person'); ?>" alt="<?php the_field('testimonial_person'); ?>" />
         <?php endif; ?>
     </div>
     <div class="testimonial__text">
