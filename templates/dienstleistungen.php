@@ -56,7 +56,7 @@ Template Name: Dienstleistungen
     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
     </div>
     <div class="clear"></div><br>
-    
+
     <div class="grid_6 omega productimage">
         <?php $image = get_field('ms-regionscreenshot');if( !empty($image) ): ?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
