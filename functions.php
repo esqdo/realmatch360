@@ -134,7 +134,7 @@ if(function_exists('add_theme_support')) {
 
     /** #1 for our featured content slider */
     add_image_size( 'employee', 223, 160, true );
-	add_image_size( 'employee_square', 500, 500, true );
+	add_image_size( 'employee_square', 600, 600, true );
 
     /* Featured Slider Sizes */
     add_image_size( 'featured_desktop',1028,400,true );
