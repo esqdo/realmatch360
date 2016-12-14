@@ -31,7 +31,7 @@
       }
       & img {
         width:100%;
-        margin-left:35px;
+        margin-left:-30px;
         @include max-width(sm) {
           margin-left:0;
         }
