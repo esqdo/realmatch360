@@ -31,6 +31,10 @@
       }
       & img {
         width:100%;
+        margin-left:35px;
+        @include max-width(sm) {
+          margin-left:0;
+        }
       }
       & > p{
         & i {
