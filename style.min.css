@@ -1412,7 +1412,7 @@ img.fb{width:100%;border:1px #f00 solid}
 .employees__member{-webkit-flex-basis:24%;-ms-flex-preferred-size:24%;flex-basis:24%}
 .employees__member-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .employees__member-content i{margin:10px 10px 10px 0}
-.employees__member-content img{width:100%;margin-left:-30px}
+.employees__member-content img{width:100%;margin-left:-35px}
 .employees__member-content>p i{margin-right:5px}
 .employees__member-content h3{padding:10px 0;color:#fff}
 .employees__job{font-family:"LatoBold"}
