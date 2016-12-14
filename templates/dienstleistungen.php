@@ -34,19 +34,6 @@ Template Name: Dienstleistungen
 
 	<div class="clear"></div><br>
 
-    <div class="grid_6 omega productimage">
-        <?php if( get_field('ms-regionscreenshot') ): ?>
-            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
-        <?php endif; ?>
-    </div>
-    <div class="grid_5 omega"><?php the_field('ms-region');?></div>
-    <div class="grid_6 omega productimagemobile">
-        <?php if( get_field('ms-regionscreenshot') ): ?>
-            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
-        <?php endif; ?>
-    </div>
-    <div class="clear"></div><br>
-
 
      <div class="grid_6 omega productimage">
          <?php if( get_field('_projektcheckscreenshot') ): ?>
@@ -72,6 +59,20 @@ Template Name: Dienstleistungen
           <?php if( get_field('_pricesetterscreenshot') ): ?>
               <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
           <?php endif; ?>
+    </div>
+
+    <div class="clear"></div><br>
+    
+    <div class="grid_6 omega productimage">
+        <?php if( get_field('ms-regionscreenshot') ): ?>
+            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <?php endif; ?>
+    </div>
+    <div class="grid_5 omega"><?php the_field('ms-region');?></div>
+    <div class="grid_6 omega productimagemobile">
+        <?php if( get_field('ms-regionscreenshot') ): ?>
+            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <?php endif; ?>
     </div>
 
 
