@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Realmatch360\n"
-"POT-Creation-Date: 2016-12-10 15:03+0100\n"
-"PO-Revision-Date: 2016-12-10 15:04+0100\n"
+"POT-Creation-Date: 2017-01-02 15:49+0100\n"
+"PO-Revision-Date: 2017-01-02 15:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -88,19 +88,19 @@ msgstr ""
 msgid "Blog Widget Area"
 msgstr "Blog Widget Area"
 
-#: functions.php:156
+#: functions.php:157
 msgid "Choose and display a single offer"
 msgstr "Choisissez et afficher une seule offre"
 
-#: functions.php:158 inc/customposts/customposts.php:27
+#: functions.php:159 inc/customposts/customposts.php:27
 msgid "Offers"
 msgstr "Offres"
 
-#: functions.php:189
+#: functions.php:190
 msgid "Select an Offer:"
 msgstr "Sélectionnez une offre:"
 
-#: functions.php:200
+#: functions.php:201
 msgid "No offers were found"
 msgstr "Aucune offre n'a été trouvé"
 
@@ -2013,6 +2013,22 @@ msgstr "Tag Archives:"
 #: templates/about.php:29
 msgid "Adhoc order form"
 msgstr "Demande de données"
+
+#: templates/dienstleistungen.php:21
+msgid "detailed-analysis-per-comunity"
+msgstr "analyse-detaillee-par-commune"
+
+#: templates/dienstleistungen.php:38
+msgid "project-check"
+msgstr "verification-de-projets"
+
+#: templates/dienstleistungen.php:55
+msgid "price-setter"
+msgstr "pricesetter"
+
+#: templates/dienstleistungen.php:72
+msgid "ms-region-report"
+msgstr "rapport-sur-les-regions-ms"
 
 #: templates/frontpage-redesign.php:24 templates/frontpage.php:38
 msgid "118894194"
