@@ -17,64 +17,73 @@ Template Name: Dienstleistungen
 
 <section class="page-content dienstleistungen">
 	<div class="grid_12"><?php the_content(); ?></div>
+    <!-- Detailanalyse -->
+        <a name="<?php _e('detailed-analysis-per-comunity', 'realmatch360'); ?>"></a>
+        <div class="clear"></div>
 
-	<div class="clear"></div>
-
-    <div class="grid_6 omega productimage">
-        <?php if( get_field('detailanalysescreenshot') ): ?>
-    <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
-        <?php endif; ?>
-    </div>
-	<div class="grid_5 omega"><?php the_field('detailanalyse');?></div>
-        <div class="grid_6 omega productimagemobile">
+        <div class="grid_6 omega productimage">
             <?php if( get_field('detailanalysescreenshot') ): ?>
-            <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
+        <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
             <?php endif; ?>
-    </div>
+        </div>
+        <div class="grid_5 omega"><?php the_field('detailanalyse');?></div>
+            <div class="grid_6 omega productimagemobile">
+                <?php if( get_field('detailanalysescreenshot') ): ?>
+                <img src="<?php the_field('detailanalysescreenshot'); ?>" alt="<?php the_title(); ?>" />
+                <?php endif; ?>
+        </div>
+    <!-- Detailanalyse -->
 
-	<div class="clear"></div><br>
+    <!-- Projektcheck -->
+        <a name="<?php _e('project-check', 'realmatch360'); ?>"></a>
+        <div class="clear"></div><br>
 
+         <div class="grid_6 omega productimage">
+             <?php if( get_field('_projektcheckscreenshot') ): ?>
+                 <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
+             <?php endif; ?>
+        </div>
+        <div class="grid_5 omega"><?php the_field('projektcheck');?></div>
+          <div class="grid_6 omega productimagemobile">
+              <?php if( get_field('_projektcheckscreenshot') ): ?>
+                  <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
+              <?php endif; ?>
+        </div>
+    <!-- Projektcheck -->
 
-     <div class="grid_6 omega productimage">
-         <?php if( get_field('_projektcheckscreenshot') ): ?>
-             <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
-         <?php endif; ?>
-    </div>
-	<div class="grid_5 omega"><?php the_field('projektcheck');?></div>
-      <div class="grid_6 omega productimagemobile">
-          <?php if( get_field('_projektcheckscreenshot') ): ?>
-              <img src="<?php the_field('_projektcheckscreenshot'); ?>" alt="<?php the_title(); ?>" />
-          <?php endif; ?>
-    </div>
+    <!-- Pricesetter -->
+        <a name="<?php _e('price-setter', 'realmatch360'); ?>"></a>
+        <div class="clear"></div><br>
 
-    <div class="clear"></div><br>
+          <div class="grid_6 omega productimage">
+              <?php if( get_field('_pricesetterscreenshot') ): ?>
+                  <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
+              <?php endif; ?>
+        </div>
+        <div class="grid_5 omega"><?php the_field('pricesetter');?></div>
+          <div class="grid_6 omega productimagemobile">
+              <?php if( get_field('_pricesetterscreenshot') ): ?>
+                  <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
+              <?php endif; ?>
+        </div>
+    <!-- Pricesetter -->
 
-      <div class="grid_6 omega productimage">
-          <?php if( get_field('_pricesetterscreenshot') ): ?>
-              <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
-          <?php endif; ?>
-    </div>
-	<div class="grid_5 omega"><?php the_field('pricesetter');?></div>
-      <div class="grid_6 omega productimagemobile">
-          <?php if( get_field('_pricesetterscreenshot') ): ?>
-              <img src="<?php the_field('_pricesetterscreenshot'); ?>" alt="<?php the_title(); ?>" />
-          <?php endif; ?>
-    </div>
+    <!-- MS-Region -->
+        <a name="<?php _e('ms-region-report', 'realmatch360'); ?>"></a>
+        <div class="clear"></div><br>
 
-    <div class="clear"></div><br>
-    
-    <div class="grid_6 omega productimage">
-        <?php if( get_field('ms-regionscreenshot') ): ?>
-            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
-        <?php endif; ?>
-    </div>
-    <div class="grid_5 omega"><?php the_field('ms-region');?></div>
-    <div class="grid_6 omega productimagemobile">
-        <?php if( get_field('ms-regionscreenshot') ): ?>
-            <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
-        <?php endif; ?>
-    </div>
-
+        <div class="grid_6 omega productimage">
+            <?php if( get_field('ms-regionscreenshot') ): ?>
+                <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+            <?php endif; ?>
+        </div>
+        <div class="grid_5 omega"><?php the_field('ms-region');?></div>
+        <div class="grid_6 omega productimagemobile">
+            <?php if( get_field('ms-regionscreenshot') ): ?>
+                <img src="<?php the_field('ms-regionscreenshot'); ?>" alt="<?php the_title(); ?>" />
+            <?php endif; ?>
+        </div>
+    <!-- MS-Region -->
 
 	<div class="clear"></div><br>
      <div class="grid_11 omega"><?php the_field('preisliste');?></div>
