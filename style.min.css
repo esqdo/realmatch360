@@ -1112,7 +1112,7 @@ strong,b,.bold{font-family:'LatoBold'}
 .dashed-list>li:before{content:'- '}
 #container input[type="text"],#container textarea{color:#000}
 #header{margin-top:10px;background:#fff;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
-#headernav{padding:15px 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+#headernav{padding:15px 0 0 0;margin-bottom:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 #headernav #site-title{padding-left:15px}
 #headernav .mobile-menu{margin-right:auto}
 #headernav .mobile-menu ul{display:block;list-style:none;padding-left:15px}

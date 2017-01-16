@@ -8,6 +8,7 @@
 
 #headernav {
     padding:15px 0 0 0;
+    margin-bottom:10px;
     display:flex;
     justify-content: space-between;
   @include max-width(sm) {
