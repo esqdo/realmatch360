@@ -53,7 +53,7 @@ get_header(); ?>
 
         <!-- Kunden -->
         <section class="customers">
-            <h2><?php _e('Over 120 Customers rely Realmatch360', 'realmatch360'); ?></h2>
+            <h2><?php _e('Over 150 Customers rely Realmatch360', 'realmatch360'); ?></h2>
 
             <div class="customers__wrapper">
                 <?php $args = array( 'post_type' => 'featured' );
